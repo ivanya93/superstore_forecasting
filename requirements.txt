@@ -1,0 +1,44 @@
+### requirements.txt
+
+# Core Data
+pandas
+numpy
+openpyxl
+pyarrow
+
+# Database & Data Loading
+sqlalchemy
+pymysql
+psycopg2-binary
+python-dotenv
+kagglehub[pandas-datasets]
+
+# Data Visualization
+matplotlib
+seaborn
+plotly
+tabulate
+wordcloud
+kaleido
+
+# Statistics & EDA
+scipy
+statsmodels
+scikit-learn
+ydata-profiling
+
+# Machine Learning
+xgboost
+lightgbm
+
+# Notebooks
+jupyterlab
+ipython
+
+# LLM & NLP
+langchain
+langchain-core
+langchain-ollama
+langchain-openai
+langchain-anthropic
+ollama
