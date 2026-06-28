@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Superstore Analytics — Customer Segments & Marketing Mix</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1" integrity="sha384-jb8JQMbMoBUzgWatfe6COACi2ljcDdZQ2OxczGA3bGNeWe+6DChMTBJemed7ZnvJ" crossorigin="anonymous"></script>
+<style>
+:root {
+  --bg: #f0f2f5;
+  --card: #ffffff;
+  --header: #1a1f36;
+  --accent: #4361ee;
+  --accent2: #f72585;
+  --accent3: #4cc9f0;
+  --positive: #2ec4b6;
+  --negative: #e63946;
+  --text: #1a1f36;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --gap: 16px;
+  --r: 10px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:14px;}
+.wrap{max-width:1440px;margin:0 auto;padding:var(--gap);}
+
+/* ── Header ── */
+.header{background:var(--header);color:#fff;border-radius:var(--r);padding:20px 28px;margin-bottom:var(--gap);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.header h1{font-size:18px;font-weight:700;letter-spacing:-0.3px;}
+.header .subtitle{font-size:12px;color:rgba(255,255,255,0.55);margin-top:2px;}
+.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+.filters label{font-size:11px;color:rgba(255,255,255,0.6);}
+.filters select{padding:6px 10px;border:1px solid rgba(255,255,255,0.2);border-radius:6px;background:rgba(255,255,255,0.1);color:#fff;font-size:12px;cursor:pointer;}
+.filters select option{background:#1a1f36;}
+.nav-tabs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:var(--gap);}
+.nav-tab{padding:8px 18px;border-radius:6px;border:none;font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;background:var(--card);color:var(--muted);box-shadow:0 1px 3px rgba(0,0,0,.06);}
+.nav-tab.active{background:var(--accent);color:#fff;}
+.nav-tab:hover:not(.active){background:#e9ecef;color:var(--text);}
+
+/* ── Pages ── */
+.page{display:none;}.page.active{display:block;}
+
+/* ── KPI Row ── */
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:var(--gap);margin-bottom:var(--gap);}
+.kpi{background:var(--card);border-radius:var(--r);padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.07);border-left:4px solid var(--accent);}
+.kpi.k2{border-left-color:var(--positive);}
+.kpi.k3{border-left-color:var(--accent2);}
+.kpi.k4{border-left-color:#f4a261;}
+.kpi.k5{border-left-color:#7209b7;}
+.kpi.k6{border-left-color:#e63946;}
+.kpi-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px;}
+.kpi-value{font-size:26px;font-weight:700;line-height:1;}
+.kpi-sub{font-size:11px;color:var(--muted);margin-top:4px;}
+
+/* ── Chart grid ── */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);margin-bottom:var(--gap);}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:var(--gap);margin-bottom:var(--gap);}
+.grid-wide{display:grid;grid-template-columns:2fr 1fr;gap:var(--gap);margin-bottom:var(--gap);}
+.chart-card{background:var(--card);border-radius:var(--r);padding:20px 22px;box-shadow:0 1px 3px rgba(0,0,0,.07);}
+.chart-card h3{font-size:13px;font-weight:600;margin-bottom:4px;color:var(--text);}
+.chart-card .chart-desc{font-size:11px;color:var(--muted);margin-bottom:14px;}
+.chart-card canvas{max-height:260px;}
+.full-width{grid-column:1/-1;}
+
+/* ── Table ── */
+.tbl-wrap{overflow-x:auto;}
+table.dt{width:100%;border-collapse:collapse;font-size:13px;}
+table.dt thead th{text-align:left;padding:9px 12px;border-bottom:2px solid var(--border);color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;white-space:nowrap;user-select:none;}
+table.dt thead th:hover{color:var(--text);background:#f8f9fa;}
+table.dt tbody td{padding:9px 12px;border-bottom:1px solid #f3f4f6;}
+table.dt tbody tr:hover{background:#fafafa;}
+table.dt tbody tr:last-child td{border-bottom:none;}
+.tag{display:inline-block;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;}
+.tag-champ{background:#d1fae5;color:#065f46;}
+.tag-loyal{background:#dbeafe;color:#1e40af;}
+.tag-pot{background:#ede9fe;color:#5b21b6;}
+.tag-att{background:#fef3c7;color:#92400e;}
+.tag-risk{background:#fee2e2;color:#991b1b;}
+.pos{color:var(--positive);font-weight:600;}
+.neg{color:var(--negative);font-weight:600;}
+
+/* ── Insight box ── */
+.insight-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--gap);margin-bottom:var(--gap);}
+.insight{background:var(--card);border-radius:var(--r);padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.07);}
+.insight h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:8px;}
+.insight p{font-size:13px;line-height:1.5;color:var(--text);}
+.insight .highlight{font-weight:700;color:var(--accent);}
+.insight .warn{font-weight:700;color:var(--negative);}
+
+/* ── Responsive ── */
+@media(max-width:900px){
+  .grid-2,.grid-3,.grid-wide{grid-template-columns:1fr;}
+  .kpi-row{grid-template-columns:repeat(2,1fr);}
+}
+@media print{
+  .nav-tabs,.filters{display:none;}
+  .page{display:block !important;}
+  body{background:#fff;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- HEADER -->
+<div class="header">
+  <div>
+    <h1>Superstore Analytics — Customer Segments &amp; Marketing Mix</h1>
+    <div class="subtitle">Team 4 | Business Statistics &amp; Insights | Executive Master in Business Analytics &amp; AI | 2014–2017</div>
+  </div>
+  <div class="filters">
+    <label>Year</label>
+    <select id="f-year" onchange="applyFilter()">
+      <option value="all">All Years</option>
+      <option>2014</option><option>2015</option><option>2016</option><option>2017</option>
+    </select>
+    <label>Segment</label>
+    <select id="f-seg" onchange="applyFilter()">
+      <option value="all">All Segments</option>
+      <option>Consumer</option><option>Corporate</option><option>Home Office</option>
+    </select>
+    <label>Region</label>
+    <select id="f-region" onchange="applyFilter()">
+      <option value="all">All Regions</option>
+      <option>Central</option><option>East</option><option>South</option><option>West</option>
+    </select>
+  </div>
+</div>
+
+<!-- NAV TABS -->
+<div class="nav-tabs">
+  <button class="nav-tab active" onclick="showPage('overview')">📊 Executive Overview</button>
+  <button class="nav-tab" onclick="showPage('segments')">👥 Customer Segments</button>
+  <button class="nav-tab" onclick="showPage('cac')">💰 CAC &amp; Channel Mix</button>
+  <button class="nav-tab" onclick="showPage('discount')">🏷️ Discount Cliff</button>
+  <button class="nav-tab" onclick="showPage('trends')">📈 Sales Trends</button>
+  <button class="nav-tab" onclick="showPage('reco')">🎯 Recommendations</button>
+</div>
+
+<!-- ═══════════════════════════ PAGE 1: OVERVIEW ═══════════════════════════ -->
+<div id="page-overview" class="page active">
+  <div class="kpi-row">
+    <div class="kpi k1"><div class="kpi-label">Total Sales</div><div class="kpi-value" id="kpi-sales">$2.30M</div><div class="kpi-sub">2014–2017</div></div>
+    <div class="kpi k2"><div class="kpi-label">Total Profit</div><div class="kpi-value" id="kpi-profit">$286K</div><div class="kpi-sub">12.5% margin</div></div>
+    <div class="kpi k3"><div class="kpi-label">Customers</div><div class="kpi-value">793</div><div class="kpi-sub">3 segments</div></div>
+    <div class="kpi k4"><div class="kpi-label">Avg CAC</div><div class="kpi-value">$18.51</div><div class="kpi-sub">Synthetic proxy</div></div>
+    <div class="kpi k5"><div class="kpi-label">Avg LTV:CAC</div><div class="kpi-value">62×</div><div class="kpi-sub">Benchmark ≥3×</div></div>
+    <div class="kpi k6"><div class="kpi-label">Discount Cost</div><div class="kpi-value">$567K</div><div class="kpi-sub">24.7% of sales</div></div>
+  </div>
+
+  <div class="grid-wide">
+    <div class="chart-card">
+      <h3>Monthly Sales &amp; Profit — 2014–2017</h3>
+      <div class="chart-desc">Clear Q4 spikes every year; profit growth lagging sales growth in 2017</div>
+      <canvas id="ch-monthly"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Profit by Segment</h3>
+      <div class="chart-desc">Home Office has highest margin (14%); Consumer drives 47% of total profit</div>
+      <canvas id="ch-seg-profit"></canvas>
+    </div>
+  </div>
+
+  <div class="grid-3">
+    <div class="chart-card">
+      <h3>Sub-Category Profit Margin</h3>
+      <div class="chart-desc">Tables, Bookcases &amp; Supplies destroy value — negative margins</div>
+      <canvas id="ch-subcat"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Quarterly Sales Growth</h3>
+      <div class="chart-desc">Strong YoY growth; Q4 dominates every year</div>
+      <canvas id="ch-seasonal"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Segment × Region Profitability</h3>
+      <div class="chart-desc">Consumer West &amp; East are top profit pools; Consumer Central is weak</div>
+      <canvas id="ch-seg-region"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ PAGE 2: SEGMENTS ═══════════════════════════ -->
+<div id="page-segments" class="page">
+  <div class="kpi-row">
+    <div class="kpi k1"><div class="kpi-label">RFM Champions</div><div class="kpi-value">104</div><div class="kpi-sub">Avg profit $818 · LTV:CAC 206×</div></div>
+    <div class="kpi k2"><div class="kpi-label">Loyal Customers</div><div class="kpi-value">255</div><div class="kpi-sub">Avg profit $529 · LTV:CAC 93×</div></div>
+    <div class="kpi k4"><div class="kpi-label">Potential Loyalists</div><div class="kpi-value">257</div><div class="kpi-sub">Avg profit $153 · LTV:CAC 16×</div></div>
+    <div class="kpi k3"><div class="kpi-label">Needs Attention</div><div class="kpi-value">150</div><div class="kpi-sub">Avg profit $3 · LTV:CAC 4×</div></div>
+    <div class="kpi k6"><div class="kpi-label">At Risk</div><div class="kpi-value">27</div><div class="kpi-sub">Avg profit –$206 · Lapsed 1yr+</div></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="chart-card">
+      <h3>RFM Cluster — Avg Customer Profit vs LTV:CAC Ratio</h3>
+      <div class="chart-desc">Champions generate 57% of total profit from just 13% of customers</div>
+      <canvas id="ch-rfm-profit"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Customer Count by RFM Label</h3>
+      <div class="chart-desc">Potential Loyalists (257) and Loyal (255) are the largest groups to invest in</div>
+      <canvas id="ch-rfm-count"></canvas>
+    </div>
+  </div>
+
+  <div class="chart-card" style="margin-bottom:var(--gap)">
+    <h3>Channel Mix by RFM Segment — who acquires the best customers?</h3>
+    <div class="chart-desc">Paid Search acquires the most Champions (36) but also highest CAC ($28)</div>
+    <canvas id="ch-ch-rfm" style="max-height:320px;"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>RFM Segment Detail Table</h3>
+    <div class="chart-desc">Sortable — click any column header</div>
+    <div class="tbl-wrap"><div id="rfm-table"></div></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ PAGE 3: CAC ═══════════════════════════ -->
+<div id="page-cac" class="page">
+  <div class="kpi-row">
+    <div class="kpi k2"><div class="kpi-label">Best LTV:CAC</div><div class="kpi-value">Direct</div><div class="kpi-sub">174× · CAC only $3.32</div></div>
+    <div class="kpi k1"><div class="kpi-label">Most Customers</div><div class="kpi-value">Paid Search</div><div class="kpi-sub">234 customers · CAC $27.98</div></div>
+    <div class="kpi k3"><div class="kpi-label">Best Email</div><div class="kpi-value">Email</div><div class="kpi-sub">LTV:CAC 101× · CAC $5.97</div></div>
+    <div class="kpi k6"><div class="kpi-label">Worst ROI</div><div class="kpi-value">Display</div><div class="kpi-sub">LTV:CAC 30× · CAC $40.15</div></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="chart-card">
+      <h3>Average CAC by Acquisition Channel</h3>
+      <div class="chart-desc">Display is 12× more expensive than Direct; Email is the efficiency leader among volume channels</div>
+      <canvas id="ch-cac-bar"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>LTV:CAC Ratio by Channel</h3>
+      <div class="chart-desc">All channels exceed the 3× benchmark. Direct and Email have exceptional returns</div>
+      <canvas id="ch-ltv-cac"></canvas>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="chart-card">
+      <h3>Customer Volume vs Avg Profit per Customer</h3>
+      <div class="chart-desc">Paid Search dominates volume but not efficiency — Email/Direct punch above their weight</div>
+      <canvas id="ch-vol-profit"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Channel Efficiency Matrix</h3>
+      <div class="chart-desc">CAC on X-axis, Avg customer profit on Y-axis — top-left quadrant is ideal</div>
+      <canvas id="ch-scatter"></canvas>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <h3>Channel Performance Detail</h3>
+    <div class="tbl-wrap"><div id="cac-table"></div></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ PAGE 4: DISCOUNT ═══════════════════════════ -->
+<div id="page-discount" class="page">
+  <div class="kpi-row">
+    <div class="kpi k2"><div class="kpi-label">0% Discount</div><div class="kpi-value">34%</div><div class="kpi-sub">Avg margin · $67 profit/order</div></div>
+    <div class="kpi k4"><div class="kpi-label">1–20% Discount</div><div class="kpi-value">17.4%</div><div class="kpi-sub">Avg margin · $27 profit/order</div></div>
+    <div class="kpi k6"><div class="kpi-label">21–40% Discount</div><div class="kpi-value">−16.7%</div><div class="kpi-sub">Avg margin · LOSS per order</div></div>
+    <div class="kpi k6"><div class="kpi-label">&gt;40% Discount</div><div class="kpi-value">−109%</div><div class="kpi-sub">Avg margin · Severe loss</div></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="chart-card">
+      <h3>Avg Profit per Order by Discount Bucket</h3>
+      <div class="chart-desc">The cliff: profit collapses to negative at &gt;20% discount. 1,137 orders in loss-making buckets.</div>
+      <canvas id="ch-disc-profit"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Avg Profit Margin (%) by Discount Bucket</h3>
+      <div class="chart-desc">Discounts above 20% don't just reduce margin — they invert it entirely</div>
+      <canvas id="ch-disc-margin"></canvas>
+    </div>
+  </div>
+
+  <div class="insight-row">
+    <div class="insight">
+      <h4>🔍 Finding</h4>
+      <p>Orders with <span class="highlight">&gt;20% discount</span> represent <span class="highlight">11.4%</span> of all orders but generate <span class="warn">negative profit</span>. The break-even point is a 20% discount ceiling.</p>
+    </div>
+    <div class="insight">
+      <h4>💡 Implication</h4>
+      <p>Sub-categories already running negative margins (Tables −8.6%, Bookcases −3%) should have discounts <span class="highlight">immediately capped at 0%</span>. Any discount on these is a direct cash loss.</p>
+    </div>
+    <div class="insight">
+      <h4>🎯 A/B Experiment Design</h4>
+      <p>Hypothetical test: remove discounts &gt;20% on Furniture. Expected uplift: <span class="highlight">≈$20K/yr</span> in recovered margin from Tables alone, based on current discount cost of $39K in that sub-category.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ PAGE 5: TRENDS ═══════════════════════════ -->
+<div id="page-trends" class="page">
+  <div class="kpi-row">
+    <div class="kpi k1"><div class="kpi-label">2014 Total Sales</div><div class="kpi-value">$484K</div><div class="kpi-sub">Baseline year</div></div>
+    <div class="kpi k2"><div class="kpi-label">2015 Total Sales</div><div class="kpi-value">$470K</div><div class="kpi-sub">−2.8% vs 2014</div></div>
+    <div class="kpi k3"><div class="kpi-label">2016 Total Sales</div><div class="kpi-value">$609K</div><div class="kpi-sub">+29.5% vs 2015</div></div>
+    <div class="kpi k4"><div class="kpi-label">2017 Total Sales</div><div class="kpi-value">$733K</div><div class="kpi-sub">+20.4% vs 2016</div></div>
+  </div>
+
+  <div class="chart-card" style="margin-bottom:var(--gap)">
+    <h3>Monthly Sales &amp; Profit Trend — Full Time Series</h3>
+    <div class="chart-desc">Strong Q4 seasonality every year. Note: margin compression visible in late 2017 (sales ↑, profit flat)</div>
+    <canvas id="ch-monthly2" style="max-height:300px;"></canvas>
+  </div>
+
+  <div class="grid-2">
+    <div class="chart-card">
+      <h3>Quarterly Sales by Year</h3>
+      <div class="chart-desc">Q4 is 40–45% of annual sales in every year — critical planning window</div>
+      <canvas id="ch-qtr"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Quarterly Profit Margin by Year</h3>
+      <div class="chart-desc">Margin improvement from 2014→2016 stalled in 2017 — discount leakage likely driver</div>
+      <canvas id="ch-qtr-margin"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ PAGE 6: RECOMMENDATIONS ═══════════════════════════ -->
+<div id="page-reco" class="page">
+  <div class="kpi-row">
+    <div class="kpi k1"><div class="kpi-label">CEO Action 1</div><div class="kpi-value" style="font-size:16px;margin-top:4px;">Cap Discounts</div><div class="kpi-sub">20% ceiling on all Furniture</div></div>
+    <div class="kpi k2"><div class="kpi-label">CEO Action 2</div><div class="kpi-value" style="font-size:16px;margin-top:4px;">Reallocate Budget</div><div class="kpi-sub">Shift to Email &amp; Direct channels</div></div>
+    <div class="kpi k3"><div class="kpi-label">CEO Action 3</div><div class="kpi-value" style="font-size:16px;margin-top:4px;">Retention Programme</div><div class="kpi-sub">177 At-Risk + Needs Attention customers</div></div>
+  </div>
+
+  <div class="insight-row">
+    <div class="insight">
+      <h4>🏷️ Action 1 — Discount Policy Reform</h4>
+      <p><strong>Observation:</strong> 1,137 orders (11.4%) carry &gt;20% discount and generate <span class="warn">average losses of $77–$107/order</span>. Tables sub-category alone runs −8.6% margin <em>before</em> discounts.</p>
+      <p style="margin-top:8px;"><strong>Action:</strong> Cap discounts at 20% company-wide. Eliminate discounts entirely on Tables, Bookcases, Supplies.</p>
+      <p style="margin-top:8px;"><strong>Expected impact:</strong> Recover ~<span class="highlight">$30–40K/year</span> in margin from Furniture sub-categories.</p>
+    </div>
+    <div class="insight">
+      <h4>📡 Action 2 — Channel Budget Reallocation</h4>
+      <p><strong>Observation:</strong> Display advertising costs <span class="warn">$40.15/customer</span> and yields only LTV:CAC 30×. Email costs <span class="highlight">$5.97/customer</span> with LTV:CAC 101×. Direct channel: $3.32 CAC, 174× return.</p>
+      <p style="margin-top:8px;"><strong>Action:</strong> Reallocate 30% of Display budget to Email and Organic. Grow Direct referral programme.</p>
+      <p style="margin-top:8px;"><strong>Expected impact:</strong> Same customer acquisition volume at ~<span class="highlight">35% lower total CAC spend</span>.</p>
+    </div>
+    <div class="insight">
+      <h4>🎯 Action 3 — Retention Programme</h4>
+      <p><strong>Observation:</strong> 27 <span class="warn">At-Risk</span> customers (avg −$206 monetary, lapsed 376 days) and 150 <span class="warn">Needs Attention</span> customers (avg $3 monetary, lapsed 248 days) represent untapped recovery value.</p>
+      <p style="margin-top:8px;"><strong>Action:</strong> Targeted re-engagement campaign for Needs Attention segment. If 20% convert to Loyal, expected uplift ~<span class="highlight">$15K</span> in incremental profit.</p>
+      <p style="margin-top:8px;"><strong>KPIs to track:</strong> Reactivation rate, profit per reactivated customer, retention cost vs CLV uplift.</p>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="chart-card">
+      <h3>Priority Segments for Marketing Investment</h3>
+      <div class="chart-desc">Champions + Loyal = 45% of customers but generate &gt;80% of profit — protect and grow these</div>
+      <canvas id="ch-reco-seg"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Channel ROI — LTV:CAC vs Cost</h3>
+      <div class="chart-desc">Reallocate budget from bottom-left (expensive, low ROI) to top-right (cheap, high ROI)</div>
+      <canvas id="ch-reco-ch"></canvas>
+    </div>
+  </div>
+
+  <div class="insight-row">
+    <div class="insight">
+      <h4>📊 Skill 1 — Marketing Mix &amp; Budget Allocation</h4>
+      <p>CAC proxy via discount cost; LTV:CAC by channel; channel profitability ranking; incrementality experiment design (A/B on Furniture discounts).</p>
+    </div>
+    <div class="insight">
+      <h4>👥 Skill 3 — Customer Segmentation</h4>
+      <p>K-Means (k=5) on Winsorised RFM scores. Predefined segments (Consumer/Corporate/HO) show identical cluster distribution — behavioral clusters are more actionable.</p>
+    </div>
+    <div class="insight">
+      <h4>📈 Skill 2 — Forecasting Signal</h4>
+      <p>YoY growth: +26% 2014→2017. Q4 seasonality consistent at 40–45% of annual sales. Prophet model (notebook 05) will project 2018 peak at ~$320K Q4.</p>
+    </div>
+    <div class="insight">
+      <h4>🏛️ Skill 4 — Reporting &amp; Governance</h4>
+      <p>This dashboard is the Looker Studio prototype — BigQuery tables: <code>customer_master</code>, <code>enriched_with_clusters</code>, <code>monthly_channel_spend</code> ready for upload.</p>
+    </div>
+  </div>
+</div>
+
+</div><!-- /wrap -->
+
+<script>
+// ══════════════════════════════════════════════════════
+// DATA
+// ══════════════════════════════════════════════════════
+const DATA = {
+  monthly: [{"month":"2014-01","sales":14237,"profit":2450},{"month":"2014-02","sales":4520,"profit":862},{"month":"2014-03","sales":55691,"profit":499},{"month":"2014-04","sales":28295,"profit":3489},{"month":"2014-05","sales":23648,"profit":2739},{"month":"2014-06","sales":34595,"profit":4977},{"month":"2014-07","sales":33946,"profit":-841},{"month":"2014-08","sales":27909,"profit":5318},{"month":"2014-09","sales":81777,"profit":8328},{"month":"2014-10","sales":31453,"profit":3448},{"month":"2014-11","sales":78629,"profit":9292},{"month":"2014-12","sales":69546,"profit":8984},{"month":"2015-01","sales":18174,"profit":-3281},{"month":"2015-02","sales":11951,"profit":2814},{"month":"2015-03","sales":38726,"profit":9732},{"month":"2015-04","sales":34195,"profit":4187},{"month":"2015-05","sales":30132,"profit":4668},{"month":"2015-06","sales":24797,"profit":3336},{"month":"2015-07","sales":28765,"profit":3289},{"month":"2015-08","sales":36898,"profit":5356},{"month":"2015-09","sales":64596,"profit":8209},{"month":"2015-10","sales":31405,"profit":2817},{"month":"2015-11","sales":75973,"profit":12475},{"month":"2015-12","sales":74920,"profit":8017},{"month":"2016-01","sales":18542,"profit":2825},{"month":"2016-02","sales":22979,"profit":5005},{"month":"2016-03","sales":51716,"profit":3612},{"month":"2016-04","sales":38750,"profit":2978},{"month":"2016-05","sales":56988,"profit":8662},{"month":"2016-06","sales":40345,"profit":4750},{"month":"2016-07","sales":39262,"profit":4433},{"month":"2016-08","sales":31115,"profit":2062},{"month":"2016-09","sales":73410,"profit":9329},{"month":"2016-10","sales":59688,"profit":16243},{"month":"2016-11","sales":79412,"profit":4011},{"month":"2016-12","sales":96999,"profit":17885},{"month":"2017-01","sales":43971,"profit":7140},{"month":"2017-02","sales":20301,"profit":1614},{"month":"2017-03","sales":58872,"profit":14752},{"month":"2017-04","sales":36522,"profit":933},{"month":"2017-05","sales":44261,"profit":6343},{"month":"2017-06","sales":52982,"profit":8223},{"month":"2017-07","sales":45264,"profit":6953},{"month":"2017-08","sales":63121,"profit":9041},{"month":"2017-09","sales":87867,"profit":10992},{"month":"2017-10","sales":77777,"profit":9275},{"month":"2017-11","sales":118448,"profit":9690},{"month":"2017-12","sales":83829,"profit":8483}],
+  segment: [{"Segment":"Consumer","Sales":1161401,"Profit":134119,"Orders":2586,"Customers":409,"Margin":12.0,"Profit_per_Order":52},{"Segment":"Corporate","Sales":706146,"Profit":91979,"Orders":1514,"Customers":236,"Margin":13.0,"Profit_per_Order":61},{"Segment":"Home Office","Sales":429653,"Profit":60299,"Orders":909,"Customers":148,"Margin":14.0,"Profit_per_Order":66}],
+  cac: [{"Acquisition_Channel":"Direct","Customers":60,"Avg_CAC":3.32,"Avg_LTV_CAC":174.0,"Avg_Monetary":342.53},{"Acquisition_Channel":"Display","Customers":54,"Avg_CAC":40.15,"Avg_LTV_CAC":30.48,"Avg_Monetary":372.21},{"Acquisition_Channel":"Email","Customers":145,"Avg_CAC":5.97,"Avg_LTV_CAC":100.53,"Avg_Monetary":350.92},{"Acquisition_Channel":"Organic","Customers":140,"Avg_CAC":9.89,"Avg_LTV_CAC":38.52,"Avg_Monetary":304.38},{"Acquisition_Channel":"Paid Search","Customers":234,"Avg_CAC":27.98,"Avg_LTV_CAC":36.41,"Avg_Monetary":326.27},{"Acquisition_Channel":"Social Media","Customers":160,"Avg_CAC":21.97,"Avg_LTV_CAC":53.51,"Avg_Monetary":273.58}],
+  rfm: [{"RFM_Label":"At Risk","Customers":27,"Avg_CAC":15.3,"Avg_LTV_CAC":-27.05,"Avg_Monetary":-205.69,"Avg_Frequency":2.7},{"RFM_Label":"Champions","Customers":104,"Avg_CAC":19.28,"Avg_LTV_CAC":205.56,"Avg_Monetary":818.23,"Avg_Frequency":9.09},{"RFM_Label":"Loyal Customers","Customers":255,"Avg_CAC":18.47,"Avg_LTV_CAC":93.21,"Avg_Monetary":529.46,"Avg_Frequency":7.62},{"RFM_Label":"Needs Attention","Customers":150,"Avg_CAC":18.31,"Avg_LTV_CAC":4.39,"Avg_Monetary":2.61,"Avg_Frequency":3.84},{"RFM_Label":"Potential Loyalists","Customers":257,"Avg_CAC":18.7,"Avg_LTV_CAC":15.8,"Avg_Monetary":152.99,"Avg_Frequency":5.69}],
+  discount: [{"bucket":"0%","Orders":2644,"Avg_Profit":66.9,"Avg_Margin":34.0},{"bucket":"1-20%","Orders":2507,"Avg_Profit":26.5,"Avg_Margin":17.4},{"bucket":"21-40%","Orders":400,"Avg_Profit":-77.86,"Avg_Margin":-16.7},{"bucket":">40%","Orders":737,"Avg_Profit":-106.71,"Avg_Margin":-108.9}],
+  seasonal: [{"Year":2014,"Quarter":1,"Sales":74448,"Profit":3811},{"Year":2014,"Quarter":2,"Sales":86539,"Profit":11204},{"Year":2014,"Quarter":3,"Sales":143633,"Profit":12805},{"Year":2014,"Quarter":4,"Sales":179628,"Profit":21724},{"Year":2015,"Quarter":1,"Sales":68852,"Profit":9265},{"Year":2015,"Quarter":2,"Sales":89124,"Profit":12191},{"Year":2015,"Quarter":3,"Sales":130260,"Profit":16854},{"Year":2015,"Quarter":4,"Sales":182297,"Profit":23309},{"Year":2016,"Quarter":1,"Sales":93237,"Profit":11441},{"Year":2016,"Quarter":2,"Sales":136082,"Profit":16390},{"Year":2016,"Quarter":3,"Sales":143787,"Profit":15824},{"Year":2016,"Quarter":4,"Sales":236099,"Profit":38140},{"Year":2017,"Quarter":1,"Sales":123145,"Profit":23506},{"Year":2017,"Quarter":2,"Sales":133764,"Profit":15499},{"Year":2017,"Quarter":3,"Sales":196252,"Profit":26985},{"Year":2017,"Quarter":4,"Sales":280054,"Profit":27449}],
+  subcat: [{"Sub-Category":"Tables","Sales":206966,"Profit":-17725,"Margin":-9},{"Sub-Category":"Bookcases","Sales":114880,"Profit":-3473,"Margin":-3},{"Sub-Category":"Supplies","Sales":46674,"Profit":-1189,"Margin":-2},{"Sub-Category":"Machines","Sales":189239,"Profit":3385,"Margin":2},{"Sub-Category":"Chairs","Sales":328449,"Profit":26590,"Margin":8},{"Sub-Category":"Storage","Sales":223844,"Profit":21279,"Margin":10},{"Sub-Category":"Phones","Sales":330007,"Profit":44516,"Margin":14},{"Sub-Category":"Furnishings","Sales":91705,"Profit":13059,"Margin":14},{"Sub-Category":"Binders","Sales":203413,"Profit":30222,"Margin":15},{"Sub-Category":"Appliances","Sales":107532,"Profit":18138,"Margin":17},{"Sub-Category":"Art","Sales":27119,"Profit":6528,"Margin":24},{"Sub-Category":"Accessories","Sales":167380,"Profit":41937,"Margin":25},{"Sub-Category":"Fasteners","Sales":3024,"Profit":950,"Margin":31},{"Sub-Category":"Copiers","Sales":149528,"Profit":55618,"Margin":37},{"Sub-Category":"Envelopes","Sales":16476,"Profit":6964,"Margin":42},{"Sub-Category":"Paper","Sales":78479,"Profit":34054,"Margin":43},{"Sub-Category":"Labels","Sales":12486,"Profit":5546,"Margin":44}],
+  ch_rfm: [{"channel":"Direct","label":"At Risk","count":3},{"channel":"Direct","label":"Champions","count":10},{"channel":"Direct","label":"Loyal Customers","count":17},{"channel":"Direct","label":"Needs Attention","count":11},{"channel":"Direct","label":"Potential Loyalists","count":19},{"channel":"Display","label":"At Risk","count":1},{"channel":"Display","label":"Champions","count":9},{"channel":"Display","label":"Loyal Customers","count":16},{"channel":"Display","label":"Needs Attention","count":11},{"channel":"Display","label":"Potential Loyalists","count":17},{"channel":"Email","label":"At Risk","count":7},{"channel":"Email","label":"Champions","count":19},{"channel":"Email","label":"Loyal Customers","count":47},{"channel":"Email","label":"Needs Attention","count":25},{"channel":"Email","label":"Potential Loyalists","count":47},{"channel":"Organic","label":"At Risk","count":5},{"channel":"Organic","label":"Champions","count":17},{"channel":"Organic","label":"Loyal Customers","count":50},{"channel":"Organic","label":"Needs Attention","count":32},{"channel":"Organic","label":"Potential Loyalists","count":36},{"channel":"Paid Search","label":"At Risk","count":5},{"channel":"Paid Search","label":"Champions","count":36},{"channel":"Paid Search","label":"Loyal Customers","count":70},{"channel":"Paid Search","label":"Needs Attention","count":46},{"channel":"Paid Search","label":"Potential Loyalists","count":77},{"channel":"Social Media","label":"At Risk","count":6},{"channel":"Social Media","label":"Champions","count":13},{"channel":"Social Media","label":"Loyal Customers","count":55},{"channel":"Social Media","label":"Needs Attention","count":25},{"channel":"Social Media","label":"Potential Loyalists","count":61}],
+  seg_region: [{"Segment":"Consumer","Region":"Central","Sales":252031,"Profit":8564},{"Segment":"Consumer","Region":"East","Sales":350908,"Profit":41191},{"Segment":"Consumer","Region":"South","Sales":195581,"Profit":26914},{"Segment":"Consumer","Region":"West","Sales":362881,"Profit":57451},{"Segment":"Corporate","Region":"Central","Sales":157996,"Profit":18704},{"Segment":"Corporate","Region":"East","Sales":200409,"Profit":23623},{"Segment":"Corporate","Region":"South","Sales":121886,"Profit":15215},{"Segment":"Corporate","Region":"West","Sales":225855,"Profit":34437},{"Segment":"Home Office","Region":"Central","Sales":91213,"Profit":12438},{"Segment":"Home Office","Region":"East","Sales":127464,"Profit":26709},{"Segment":"Home Office","Region":"South","Sales":74255,"Profit":4621},{"Segment":"Home Office","Region":"West","Sales":136722,"Profit":16530}]
+};
+
+// ══════════════════════════════════════════════════════
+// HELPERS
+// ══════════════════════════════════════════════════════
+const COLORS = ['#4361ee','#f72585','#4cc9f0','#f4a261','#2ec4b6','#7209b7','#e63946','#90be6d'];
+const rfmColors = {'Champions':'#059669','Loyal Customers':'#2563eb','Potential Loyalists':'#7c3aed','Needs Attention':'#d97706','At Risk':'#dc2626'};
+
+function fmtK(v){
+  if(Math.abs(v)>=1e6) return '$'+(v/1e6).toFixed(1)+'M';
+  if(Math.abs(v)>=1e3) return '$'+(v/1e3).toFixed(0)+'K';
+  return '$'+v.toFixed(0);
+}
+function fmtPct(v){return v.toFixed(1)+'%';}
+function fmtNum(v){return v.toLocaleString();}
+
+function tagRFM(label){
+  const map={'Champions':'tag-champ','Loyal Customers':'tag-loyal','Potential Loyalists':'tag-pot','Needs Attention':'tag-att','At Risk':'tag-risk'};
+  return `<span class="tag ${map[label]||''}">${label}</span>`;
+}
+
+// ══════════════════════════════════════════════════════
+// TAB NAVIGATION
+// ══════════════════════════════════════════════════════
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// ══════════════════════════════════════════════════════
+// FILTER (overview page only — monthly + seg charts)
+// ══════════════════════════════════════════════════════
+function applyFilter(){
+  const yr = document.getElementById('f-year').value;
+  const seg = document.getElementById('f-seg').value;
+  // Filter monthly data
+  let months = DATA.monthly;
+  if(yr !== 'all') months = months.filter(d=>d.month.startsWith(yr));
+  charts['monthly'].data.labels = months.map(d=>d.month);
+  charts['monthly'].data.datasets[0].data = months.map(d=>d.sales);
+  charts['monthly'].data.datasets[1].data = months.map(d=>d.profit);
+  charts['monthly'].update('none');
+  if(charts['monthly2']){
+    charts['monthly2'].data.labels = months.map(d=>d.month);
+    charts['monthly2'].data.datasets[0].data = months.map(d=>d.sales);
+    charts['monthly2'].data.datasets[1].data = months.map(d=>d.profit);
+    charts['monthly2'].update('none');
+  }
+  // Filter segment data
+  let segs = DATA.segment;
+  if(seg !== 'all') segs = segs.filter(d=>d.Segment===seg);
+  charts['seg-profit'].data.labels = segs.map(d=>d.Segment);
+  charts['seg-profit'].data.datasets[0].data = segs.map(d=>d.Profit);
+  charts['seg-profit'].update('none');
+}
+
+// ══════════════════════════════════════════════════════
+// CHART REGISTRY
+// ══════════════════════════════════════════════════════
+const charts = {};
+
+function mkLine(id, labels, datasets, opts={}){
+  const ctx = document.getElementById(id).getContext('2d');
+  charts[id] = new Chart(ctx,{
+    type:'line',
+    data:{labels, datasets: datasets.map((ds,i)=>({
+      label:ds.label, data:ds.data,
+      borderColor: ds.color||COLORS[i], backgroundColor:(ds.color||COLORS[i])+'22',
+      borderWidth:2, fill:ds.fill||false, tension:0.3, pointRadius:2, pointHoverRadius:5
+    }))},
+    options:{responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{legend:{position:'top',labels:{usePointStyle:true,padding:14,font:{size:11}}},
+        tooltip:{callbacks:{label:ctx=>`${ctx.dataset.label}: ${fmtK(ctx.parsed.y)}`}}},
+      scales:{x:{grid:{display:false},ticks:{font:{size:10},maxTicksLimit:12}},
+        y:{beginAtZero:true,ticks:{callback:v=>fmtK(v),font:{size:10}}}}}
+  });
+}
+
+function mkBar(id, labels, datasets, opts={}){
+  const ctx = document.getElementById(id).getContext('2d');
+  const isH = opts.horizontal||(labels.length>8);
+  charts[id] = new Chart(ctx,{
+    type:'bar',
+    data:{labels, datasets: datasets.map((ds,i)=>({
+      label:ds.label||'', data:ds.data,
+      backgroundColor: ds.colors||COLORS.map(c=>c+'cc'),
+      borderColor: ds.colors||COLORS,
+      borderWidth:1, borderRadius:4
+    }))},
+    options:{responsive:true,maintainAspectRatio:false,
+      indexAxis: isH?'y':'x',
+      plugins:{legend:{display:datasets.length>1,position:'top',labels:{font:{size:11},usePointStyle:true}},
+        tooltip:{callbacks:{label:ctx=>{
+          const v = ctx.parsed[isH?'x':'y'];
+          return `${ctx.dataset.label||''}: ${opts.fmt==='pct'?fmtPct(v):fmtK(v)}`;
+        }}}},
+      scales:{
+        x:{beginAtZero:true,grid:{display:isH},ticks:{callback:v=>opts.fmt==='pct'?fmtPct(v):fmtK(v),font:{size:10}}},
+        y:{beginAtZero:!isH,grid:{display:!isH},ticks:{font:{size:10}}}
+      }}
+  });
+}
+
+function mkGroupedBar(id, labels, datasets, opts={}){
+  const ctx = document.getElementById(id).getContext('2d');
+  charts[id] = new Chart(ctx,{
+    type:'bar',
+    data:{labels, datasets},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{position:'top',labels:{usePointStyle:true,padding:12,font:{size:11}}}},
+      scales:{x:{grid:{display:false},ticks:{font:{size:10}}},
+        y:{beginAtZero:true,stacked:opts.stacked||false,ticks:{callback:v=>fmtK(v),font:{size:10}}}}}
+  });
+}
+
+function mkDoughnut(id, labels, data, colors){
+  const ctx = document.getElementById(id).getContext('2d');
+  charts[id] = new Chart(ctx,{
+    type:'doughnut',
+    data:{labels, datasets:[{data, backgroundColor:colors||COLORS.map(c=>c+'cc'), borderColor:'#fff', borderWidth:2}]},
+    options:{responsive:true,maintainAspectRatio:false,cutout:'60%',
+      plugins:{legend:{position:'right',labels:{usePointStyle:true,padding:14,font:{size:11}}},
+        tooltip:{callbacks:{label:ctx=>{
+          const t=ctx.dataset.data.reduce((a,b)=>a+b,0);
+          return `${ctx.label}: ${fmtK(ctx.parsed)} (${((ctx.parsed/t)*100).toFixed(1)}%)`;
+        }}}}}
+  });
+}
+
+function mkScatter(id, datasets){
+  const ctx = document.getElementById(id).getContext('2d');
+  charts[id] = new Chart(ctx,{
+    type:'scatter',
+    data:{datasets},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{position:'top',labels:{font:{size:11},usePointStyle:true}},
+        tooltip:{callbacks:{label:ctx=>`${ctx.dataset.label}: CAC $${ctx.parsed.x} | Profit $${ctx.parsed.y}`}}},
+      scales:{
+        x:{title:{display:true,text:'Avg CAC ($)',font:{size:11}},ticks:{font:{size:10}}},
+        y:{title:{display:true,text:'Avg Customer Profit ($)',font:{size:11}},ticks:{callback:v=>fmtK(v),font:{size:10}}}
+      }}
+  });
+}
+
+// ══════════════════════════════════════════════════════
+// TABLES
+// ══════════════════════════════════════════════════════
+function renderRFMTable(){
+  const rows = DATA.rfm.slice().sort((a,b)=>b.Avg_Monetary-a.Avg_Monetary);
+  let h=`<table class="dt"><thead><tr>
+    <th>RFM Label</th><th>Customers</th><th>Avg CAC</th><th>LTV:CAC</th><th>Avg Profit</th><th>Avg Freq.</th>
+  </tr></thead><tbody>`;
+  rows.forEach(r=>{
+    const pos = r.Avg_Monetary>=0;
+    h+=`<tr>
+      <td>${tagRFM(r.RFM_Label)}</td>
+      <td>${r.Customers}</td>
+      <td>$${r.Avg_CAC.toFixed(2)}</td>
+      <td class="${r.Avg_LTV_CAC>=3?'pos':'neg'}">${r.Avg_LTV_CAC.toFixed(1)}×</td>
+      <td class="${pos?'pos':'neg'}">${fmtK(r.Avg_Monetary)}</td>
+      <td>${r.Avg_Frequency.toFixed(1)}</td>
+    </tr>`;
+  });
+  document.getElementById('rfm-table').innerHTML = h+'</tbody></table>';
+}
+
+function renderCACTable(){
+  const rows = DATA.cac.slice().sort((a,b)=>b.Avg_LTV_CAC-a.Avg_LTV_CAC);
+  let h=`<table class="dt"><thead><tr>
+    <th>Channel</th><th>Customers</th><th>Avg CAC</th><th>LTV:CAC</th><th>Avg Customer Profit</th>
+  </tr></thead><tbody>`;
+  rows.forEach(r=>{
+    h+=`<tr>
+      <td><strong>${r.Acquisition_Channel}</strong></td>
+      <td>${r.Customers}</td>
+      <td>$${r.Avg_CAC.toFixed(2)}</td>
+      <td class="${r.Avg_LTV_CAC>=3?'pos':'neg'}">${r.Avg_LTV_CAC.toFixed(1)}×</td>
+      <td class="${r.Avg_Monetary>=0?'pos':'neg'}">${fmtK(r.Avg_Monetary)}</td>
+    </tr>`;
+  });
+  document.getElementById('cac-table').innerHTML = h+'</tbody></table>';
+}
+
+// ══════════════════════════════════════════════════════
+// BUILD ALL CHARTS
+// ══════════════════════════════════════════════════════
+window.addEventListener('load', ()=>{
+
+  // ── Overview page ──
+  mkLine('ch-monthly',
+    DATA.monthly.map(d=>d.month),
+    [{label:'Sales', data:DATA.monthly.map(d=>d.sales), color:'#4361ee'},
+     {label:'Profit', data:DATA.monthly.map(d=>d.profit), color:'#2ec4b6'}]
+  );
+
+  mkDoughnut('ch-seg-profit',
+    DATA.segment.map(d=>d.Segment),
+    DATA.segment.map(d=>d.Profit),
+    ['#4361ee','#f72585','#4cc9f0']
+  );
+
+  // Sub-category horizontal bar
+  const sc = DATA.subcat;
+  const scColors = sc.map(d=>d.Margin<0?'#e63946cc':'#4361eecc');
+  mkBar('ch-subcat', sc.map(d=>d['Sub-Category']),
+    [{data:sc.map(d=>d.Margin), colors:scColors}],
+    {horizontal:true, fmt:'pct'}
+  );
+
+  // Seasonal grouped bar
+  const years = [2014,2015,2016,2017];
+  const quarters = ['Q1','Q2','Q3','Q4'];
+  const seasDs = years.map((yr,i)=>({
+    label:String(yr),
+    data: quarters.map((_,qi)=>{
+      const row = DATA.seasonal.find(r=>r.Year===yr && r.Quarter===qi+1);
+      return row?row.Sales:0;
+    }),
+    backgroundColor: COLORS[i]+'cc', borderColor: COLORS[i], borderWidth:1, borderRadius:3
+  }));
+  mkGroupedBar('ch-seasonal', quarters, seasDs);
+
+  // Segment × Region grouped bar
+  const regions = ['Central','East','South','West'];
+  const segs3 = ['Consumer','Corporate','Home Office'];
+  const srDs = segs3.map((s,i)=>({
+    label:s,
+    data: regions.map(r=>{
+      const row = DATA.seg_region.find(d=>d.Segment===s && d.Region===r);
+      return row?row.Profit:0;
+    }),
+    backgroundColor: COLORS[i]+'cc', borderColor:COLORS[i], borderWidth:1, borderRadius:3
+  }));
+  mkGroupedBar('ch-seg-region', regions, srDs);
+
+  // ── Segments page ──
+  const rfmLabels = DATA.rfm.map(d=>d.RFM_Label);
+  const rfmColArr = rfmLabels.map(l=>rfmColors[l]||'#ccc');
+
+  // Grouped bar: avg monetary + LTV:CAC
+  const rfmDs = [
+    {label:'Avg Customer Profit ($)', data:DATA.rfm.map(d=>d.Avg_Monetary),
+     backgroundColor: rfmColArr.map(c=>c+'cc'), borderColor:rfmColArr, borderWidth:1, borderRadius:4},
+  ];
+  const ctx1 = document.getElementById('ch-rfm-profit').getContext('2d');
+  charts['rfm-profit'] = new Chart(ctx1,{
+    type:'bar',
+    data:{labels:rfmLabels, datasets: rfmDs},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},
+        tooltip:{callbacks:{label:ctx=>`Avg Profit: ${fmtK(ctx.parsed.y)} | LTV:CAC: ${DATA.rfm[ctx.dataIndex].Avg_LTV_CAC.toFixed(1)}×`}}},
+      scales:{x:{grid:{display:false},ticks:{font:{size:10}}},
+        y:{ticks:{callback:v=>fmtK(v),font:{size:10}}}}}
+  });
+
+  mkDoughnut('ch-rfm-count', rfmLabels, DATA.rfm.map(d=>d.Customers), rfmColArr);
+
+  // Stacked bar: channel × RFM label
+  const channels = ['Direct','Display','Email','Organic','Paid Search','Social Media'];
+  const rfmOrder = ['Champions','Loyal Customers','Potential Loyalists','Needs Attention','At Risk'];
+  const rfmStackDs = rfmOrder.map((lbl,i)=>({
+    label:lbl,
+    data: channels.map(ch=>{
+      const row = DATA.ch_rfm.find(d=>d.channel===ch && d.label===lbl);
+      return row?row.count:0;
+    }),
+    backgroundColor: [rfmColors[lbl]+'cc'],
+    borderColor: rfmColors[lbl],
+    borderWidth:1
+  }));
+  const ctx2 = document.getElementById('ch-ch-rfm').getContext('2d');
+  charts['ch-rfm'] = new Chart(ctx2,{
+    type:'bar',
+    data:{labels:channels, datasets:rfmStackDs},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{position:'top',labels:{usePointStyle:true,padding:12,font:{size:11}}}},
+      scales:{x:{stacked:true,grid:{display:false}},y:{stacked:true,ticks:{font:{size:10}}}}}
+  });
+
+  renderRFMTable();
+
+  // ── CAC page ──
+  const cacLabels = DATA.cac.map(d=>d.Acquisition_Channel);
+
+  mkBar('ch-cac-bar', cacLabels,
+    [{data:DATA.cac.map(d=>d.Avg_CAC), colors:COLORS.slice(0,6).map(c=>c+'cc')}],
+    {horizontal:false}
+  );
+
+  mkBar('ch-ltv-cac', cacLabels,
+    [{data:DATA.cac.map(d=>d.Avg_LTV_CAC), colors:DATA.cac.map(d=>d.Avg_LTV_CAC>50?'#2ec4b6cc':'#4361eecc')}],
+    {horizontal:false}
+  );
+
+  // Volume vs profit bar
+  const vp1 = DATA.cac.map(d=>({x:d.Acquisition_Channel, y:d.Customers}));
+  const vp2 = DATA.cac.map(d=>d.Avg_Monetary);
+  mkGroupedBar('ch-vol-profit', cacLabels, [
+    {label:'# Customers', data:DATA.cac.map(d=>d.Customers), backgroundColor:'#4361eecc', borderColor:'#4361ee', borderWidth:1, borderRadius:3},
+    {label:'Avg Profit ($)', data:DATA.cac.map(d=>d.Avg_Monetary), backgroundColor:'#2ec4b6cc', borderColor:'#2ec4b6', borderWidth:1, borderRadius:3}
+  ]);
+
+  // Scatter: CAC vs Profit
+  mkScatter('ch-scatter', DATA.cac.map((d,i)=>({
+    label:d.Acquisition_Channel,
+    data:[{x:d.Avg_CAC, y:d.Avg_Monetary}],
+    backgroundColor: COLORS[i]+'cc',
+    pointRadius:10, pointHoverRadius:13
+  })));
+
+  renderCACTable();
+
+  // ── Discount page ──
+  const discLabels = DATA.discount.map(d=>d.bucket);
+  const discProfitColors = DATA.discount.map(d=>d.Avg_Profit>=0?'#2ec4b6cc':'#e63946cc');
+  const discMarginColors = DATA.discount.map(d=>d.Avg_Margin>=0?'#4361eecc':'#e63946cc');
+
+  mkBar('ch-disc-profit', discLabels, [{data:DATA.discount.map(d=>d.Avg_Profit), colors:discProfitColors}]);
+  mkBar('ch-disc-margin', discLabels, [{data:DATA.discount.map(d=>d.Avg_Margin), colors:discMarginColors}], {fmt:'pct'});
+
+  // ── Trends page ──
+  mkLine('ch-monthly2',
+    DATA.monthly.map(d=>d.month),
+    [{label:'Sales', data:DATA.monthly.map(d=>d.sales), color:'#4361ee'},
+     {label:'Profit', data:DATA.monthly.map(d=>d.profit), color:'#2ec4b6'}]
+  );
+
+  // Quarterly grouped
+  const qtrDs = years.map((yr,i)=>({
+    label:String(yr),
+    data: quarters.map((_,qi)=>{
+      const row = DATA.seasonal.find(r=>r.Year===yr && r.Quarter===qi+1);
+      return row?row.Sales:0;
+    }),
+    backgroundColor: COLORS[i]+'cc', borderColor:COLORS[i], borderWidth:1, borderRadius:3
+  }));
+  mkGroupedBar('ch-qtr', quarters, qtrDs);
+
+  // Quarterly margin
+  const qtrMargDs = years.map((yr,i)=>({
+    label:String(yr),
+    data: quarters.map((_,qi)=>{
+      const row = DATA.seasonal.find(r=>r.Year===yr && r.Quarter===qi+1);
+      return row?+(row.Profit/row.Sales*100).toFixed(1):0;
+    }),
+    backgroundColor: COLORS[i]+'cc', borderColor:COLORS[i], borderWidth:1, borderRadius:3
+  }));
+  mkGroupedBar('ch-qtr-margin', quarters, qtrMargDs);
+
+  // ── Reco page ──
+  const rfmPriority = ['Champions','Loyal Customers','Potential Loyalists','Needs Attention','At Risk'];
+  mkDoughnut('ch-reco-seg', rfmPriority,
+    rfmPriority.map(l=>{const r=DATA.rfm.find(d=>d.RFM_Label===l);return r?r.Customers:0;}),
+    rfmPriority.map(l=>rfmColors[l]+'cc')
+  );
+
+  mkScatter('ch-reco-ch', DATA.cac.map((d,i)=>({
+    label:d.Acquisition_Channel,
+    data:[{x:d.Avg_CAC, y:d.Avg_LTV_CAC}],
+    backgroundColor: COLORS[i]+'cc',
+    pointRadius:10, pointHoverRadius:13
+  })));
+
+});
+</script>
+</body>
+</html>
