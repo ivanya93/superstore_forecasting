@@ -1,0 +1,794 @@
+Customer ID,Customer_Name,Segment,Region,First_Order,Total_Orders,Total_Revenue,Total_Profit,Acquisition_Channel,CAC,Acquisition_Campaign,LTV_CAC_Ratio
+AA-10315,Alex Avila,Consumer,Central,2014-03-31,5,5563.56,-362.8825,Social Media,11.99,Instagram_Retargeting,-30.27
+AA-10375,Allen Armold,Consumer,West,2014-04-21,9,1056.39,277.3824,Paid Search,31.83,Brand_Awareness_PPC,8.71
+AA-10480,Andrew Allen,Consumer,South,2014-05-04,4,1790.5120000000002,435.8274,Paid Search,31.35,Product_Category_PPC,13.9
+AA-10645,Anna Andreadi,Consumer,East,2014-06-22,6,5086.9349999999995,857.8033,Organic,15.05,Blog_Traffic,57.0
+AB-10015,Aaron Bergman,Consumer,West,2014-02-18,3,886.156,129.3465,Paid Search,21.03,Brand_Awareness_PPC,6.15
+AB-10060,Adam Bellavance,Home Office,East,2015-09-18,8,7755.62,2054.5885,Paid Search,21.7,Brand_Awareness_PPC,94.68
+AB-10105,Adrian Barton,Consumer,West,2014-12-20,10,14473.570999999998,5444.8055,Social Media,1.0,LinkedIn_B2B,5444.81
+AB-10150,Aimee Bixby,Consumer,East,2014-03-05,5,966.71,313.6597,Social Media,30.55,Instagram_Retargeting,10.27
+AB-10165,Alan Barnes,Consumer,West,2014-11-16,8,1113.838,220.813,Email,4.72,Promotional_Blast,46.78
+AB-10255,Alejandro Ballentine,Home Office,East,2014-07-22,9,914.5319999999999,264.5675,Social Media,15.32,LinkedIn_B2B,17.27
+AB-10600,Ann Blume,Corporate,West,2014-11-18,4,1515.862,-274.9604,Email,4.11,Re_Engagement,-66.9
+AC-10420,Alyssa Crouse,Corporate,West,2014-07-12,3,925.8,-62.1342,Email,7.79,Welcome_Series,-7.98
+AC-10450,Amy Cox,Consumer,Central,2014-10-31,7,5527.846,1366.0098,Social Media,23.1,Facebook_Prospecting,59.13
+AC-10615,Ann Chong,Corporate,East,2015-09-15,5,2537.6859999999997,298.8273,Paid Search,21.81,Product_Category_PPC,13.7
+AC-10660,Anna Chung,Consumer,Central,2014-10-15,5,657.316,-28.700399999999995,Paid Search,20.8,Competitor_Keywords,-1.38
+AD-10180,Alan Dominguez,Home Office,Central,2014-11-19,8,6106.88,1869.9294,Paid Search,39.37,Brand_Awareness_PPC,47.5
+AF-10870,Art Ferguson,Consumer,Central,2015-12-06,7,2052.908,317.9712,Email,2.94,Welcome_Series,108.15
+AF-10885,Art Foster,Consumer,South,2014-05-10,4,861.565,-163.1175,Social Media,20.54,Instagram_Retargeting,-7.94
+AG-10270,Alejandro Grove,Consumer,West,2014-05-13,5,2582.898,732.7399,Paid Search,25.25,Brand_Awareness_PPC,29.02
+AG-10300,Aleksandra Gannaway,Corporate,West,2014-04-26,4,367.548,59.288399999999996,Email,7.17,Promotional_Blast,8.27
+AG-10330,Alex Grayson,Consumer,West,2016-08-03,5,660.972,-5.137100000000006,Social Media,47.0,Instagram_Retargeting,-0.11
+AG-10390,Allen Goldenen,Consumer,East,2014-04-19,5,200.945,69.2784,Paid Search,42.32,Competitor_Keywords,1.64
+AG-10495,Andrew Gjertsen,Corporate,East,2015-01-04,8,2356.855,295.6668,Direct,3.44,Word_of_Mouth,85.95
+AG-10525,Andy Gerbode,Corporate,South,2014-08-09,4,1455.038,-152.7613,Direct,4.76,Word_of_Mouth,-32.09
+AG-10675,Anna Gayman,Consumer,Central,2015-05-07,7,3489.0396000000005,-246.42570000000003,Paid Search,15.89,Product_Category_PPC,-15.51
+AG-10765,Anthony Garverick,Home Office,East,2014-09-17,4,170.584,-8.431000000000001,Social Media,7.75,Instagram_Retargeting,-1.09
+AG-10900,Arthur Gainer,Consumer,West,2014-07-23,10,4510.797,343.6824,Organic,3.27,Blog_Traffic,105.1
+AH-10030,Aaron Hawkins,Corporate,East,2014-04-22,7,1744.7,365.2152,Email,3.36,Re_Engagement,108.7
+AH-10075,Adam Hart,Corporate,East,2014-11-16,10,3250.337,281.189,Paid Search,34.99,Brand_Awareness_PPC,8.04
+AH-10120,Adrian Hane,Home Office,West,2014-07-18,7,1735.5140000000001,-2.3145999999999773,Organic,14.44,Blog_Traffic,-0.16
+AH-10195,Alan Haines,Corporate,South,2015-03-05,4,1587.452,-378.5509,Organic,8.96,SEO_Content,-42.25
+AH-10210,Alan Hwang,Consumer,West,2014-11-29,9,4805.344,1308.5546,Paid Search,20.52,Brand_Awareness_PPC,63.77
+AH-10465,Amy Hunt,Consumer,East,2015-01-03,5,2495.3916,-196.12009999999998,Organic,2.46,Blog_Traffic,-79.72
+AH-10585,Angele Hood,Consumer,Central,2014-10-26,4,738.504,83.96300000000001,Paid Search,41.2,Competitor_Keywords,2.04
+AH-10690,Anna Häberlin,Corporate,East,2014-04-02,12,7888.294,1298.0166,Social Media,32.62,Facebook_Prospecting,39.79
+AI-10855,Arianne Irving,Consumer,East,2014-04-28,10,4375.786,867.7271000000001,Email,3.31,Welcome_Series,262.15
+AJ-10780,Anthony Jacobs,Corporate,South,2014-01-10,7,4867.344,150.71300000000005,Direct,1.0,Word_of_Mouth,150.71
+AJ-10795,Anthony Johnson,Corporate,South,2014-05-14,7,4501.391,1158.7064,Organic,9.62,Referral_Program,120.45
+AJ-10945,Ashley Jarboe,Consumer,South,2014-03-03,7,1839.24,521.1351999999999,Organic,17.48,Blog_Traffic,29.81
+AJ-10960,Astrea Jones,Consumer,East,2014-09-14,3,629.2479999999999,60.4265,Social Media,25.04,LinkedIn_B2B,2.41
+AM-10360,Alice McCarthy,Corporate,Central,2014-10-06,5,814.012,194.9878,Email,4.8,Re_Engagement,40.62
+AM-10705,Anne McFarland,Consumer,South,2014-10-31,8,5664.022,1085.7326,Paid Search,27.27,Product_Category_PPC,39.81
+AO-10810,Anthony O'Donnell,Corporate,West,2016-08-16,1,161.28,12.096,Paid Search,10.97,Product_Category_PPC,1.1
+AP-10720,Anne Pryor,Home Office,East,2014-03-03,8,1638.554,285.7888,Email,9.13,Welcome_Series,31.3
+AP-10915,Arthur Prichep,Consumer,South,2014-08-23,10,3323.556,579.3113,Display,29.98,Prospecting_Display,19.32
+AR-10345,Alex Russell,Corporate,East,2014-12-30,4,1055.694,-221.0544,Organic,2.52,Referral_Program,-87.72
+AR-10405,Allen Rosenblatt,Corporate,East,2014-10-03,5,2236.128,-98.7646,Paid Search,25.45,Brand_Awareness_PPC,-3.88
+AR-10510,Andrew Roberts,Consumer,East,2014-05-02,5,264.86400000000003,43.6695,Paid Search,22.88,Brand_Awareness_PPC,1.91
+AR-10540,Andy Reiter,Consumer,East,2014-11-25,6,6608.448,2884.6208,Display,45.52,Retargeting_Display,63.37
+AR-10570,Anemone Ratner,Consumer,South,2016-07-14,1,88.15,32.633,Organic,15.79,Referral_Program,2.07
+AR-10825,Anthony Rawles,Corporate,West,2014-06-30,8,4523.336,494.83519999999993,Display,58.58,Retargeting_Display,8.45
+AS-10045,Aaron Smayling,Corporate,South,2014-07-27,7,3050.692,-253.57459999999998,Direct,3.35,Sales_Outreach,-75.69
+AS-10090,Adam Shillingsburg,Consumer,South,2014-09-22,9,3255.31,64.53739999999998,Social Media,19.69,LinkedIn_B2B,3.28
+AS-10135,Adrian Shami,Home Office,East,2016-11-13,2,58.82,21.8496,Social Media,18.69,LinkedIn_B2B,1.17
+AS-10225,Alan Schoenberger,Corporate,East,2014-10-18,5,4260.784,719.7751000000001,Display,1.0,Retargeting_Display,719.78
+AS-10240,Alan Shonely,Consumer,South,2014-03-15,7,584.6080000000001,33.715799999999994,Paid Search,32.15,Competitor_Keywords,1.05
+AS-10285,Alejandro Savely,Corporate,West,2016-05-21,6,3214.236,354.62760000000003,Paid Search,33.44,Product_Category_PPC,10.6
+AS-10630,Ann Steele,Home Office,Central,2014-08-01,7,833.398,136.49190000000002,Social Media,20.51,LinkedIn_B2B,6.65
+AT-10435,Alyssa Tate,Home Office,West,2014-11-24,6,1171.814,100.87680000000002,Email,3.17,Welcome_Series,31.82
+AT-10735,Annie Thurman,Consumer,West,2014-08-30,10,3831.864,974.107,Direct,5.81,Sales_Outreach,167.66
+AW-10840,Anthony Witt,Consumer,Central,2015-04-13,4,649.376,65.77250000000001,Direct,2.96,Word_of_Mouth,22.22
+AW-10930,Arthur Wiediger,Home Office,Central,2014-07-14,7,2852.968,-104.5486,Social Media,6.94,LinkedIn_B2B,-15.06
+AY-10555,Andy Yotov,Corporate,West,2014-04-06,4,497.014,103.3499,Paid Search,29.23,Competitor_Keywords,3.54
+AZ-10750,Annie Zypern,Consumer,East,2014-03-17,6,1622.0179999999998,154.9503,Social Media,18.11,Instagram_Retargeting,8.56
+BB-10990,Barry Blumstein,Corporate,West,2014-07-27,5,744.3399999999999,11.583900000000007,Paid Search,33.73,Brand_Awareness_PPC,0.34
+BB-11545,Brenda Bowman,Corporate,Central,2015-06-05,9,6765.728,1015.0749999999999,Paid Search,24.89,Brand_Awareness_PPC,40.78
+BC-11125,Becky Castell,Home Office,West,2014-07-06,9,2933.676,251.5974,Paid Search,32.08,Product_Category_PPC,7.84
+BD-11320,Bill Donatelli,Consumer,West,2015-05-31,12,5718.521,1094.5037,Paid Search,27.91,Brand_Awareness_PPC,39.22
+BD-11500,Bradley Drucker,Consumer,Central,2014-02-01,6,4411.2429999999995,1142.1225,Email,3.67,Re_Engagement,311.21
+BD-11560,Brendan Dodson,Home Office,West,2015-05-30,2,320.54,116.714,Organic,13.87,Blog_Traffic,8.41
+BD-11605,Brian Dahlen,Consumer,East,2014-01-13,7,3288.471,634.8463,Social Media,34.65,Instagram_Retargeting,18.32
+BD-11620,Brian DeCherney,Consumer,West,2014-06-30,6,1538.11,206.75689999999997,Social Media,34.53,LinkedIn_B2B,5.99
+BD-11635,Brian Derr,Consumer,South,2014-10-05,3,582.646,141.53400000000002,Paid Search,22.08,Brand_Awareness_PPC,6.41
+BD-11725,Bruce Degenhardt,Consumer,South,2015-07-03,6,1526.5,333.9791,Paid Search,39.08,Competitor_Keywords,8.55
+BD-11770,Bryan Davis,Consumer,Central,2016-03-10,6,658.466,141.265,Paid Search,48.48,Brand_Awareness_PPC,2.91
+BE-11335,Bill Eplett,Home Office,Central,2016-01-15,5,4204.676,1487.7739000000001,Paid Search,38.48,Competitor_Keywords,38.66
+BE-11410,Bobby Elias,Consumer,East,2016-02-07,5,2261.438,755.9150999999999,Social Media,27.84,LinkedIn_B2B,27.15
+BE-11455,Brad Eason,Home Office,Central,2015-08-02,6,1727.652,139.20080000000002,Paid Search,13.33,Product_Category_PPC,10.44
+BF-10975,Barbara Fisher,Corporate,South,2014-07-14,7,599.798,227.4384,Organic,13.1,Referral_Program,17.36
+BF-11005,Barry Franz,Home Office,West,2014-09-25,4,1333.88,-291.38109999999995,Paid Search,26.07,Competitor_Keywords,-11.18
+BF-11020,Barry Französisch,Corporate,Central,2014-02-15,8,2888.506,302.02,Social Media,18.79,Facebook_Prospecting,16.07
+BF-11080,Bart Folk,Consumer,East,2014-11-28,3,272.95,110.9272,Email,7.67,Welcome_Series,14.46
+BF-11170,Ben Ferrer,Home Office,West,2014-04-13,11,5907.972,1538.2127,Organic,16.82,SEO_Content,91.45
+BF-11215,Benjamin Farhat,Home Office,West,2014-11-09,4,1585.162,523.2133,Social Media,44.85,Instagram_Retargeting,11.67
+BF-11275,Beth Fritzler,Corporate,West,2014-03-22,3,791.9899999999999,25.870199999999997,Paid Search,10.72,Competitor_Keywords,2.41
+BG-11035,Barry Gonzalez,Consumer,South,2014-11-05,8,2798.948,-711.4274,Social Media,32.72,Instagram_Retargeting,-21.74
+BG-11695,Brooke Gillingham,Corporate,East,2014-05-11,6,1874.172,107.5715,Organic,13.09,Blog_Traffic,8.22
+BG-11740,Bruce Geld,Consumer,East,2014-03-23,6,1006.356,119.34790000000001,Paid Search,42.6,Competitor_Keywords,2.8
+BH-11710,Brosina Hoffman,Consumer,West,2014-06-09,8,6255.351,802.7898,Paid Search,30.72,Brand_Awareness_PPC,26.13
+BK-11260,Berenike Kampe,Consumer,East,2014-08-03,6,659.1379999999999,-63.764399999999995,Paid Search,38.17,Competitor_Keywords,-1.67
+BM-11140,Becky Martin,Consumer,Central,2014-09-08,4,11789.63,-1659.9580999999998,Paid Search,30.1,Competitor_Keywords,-55.15
+BM-11575,Brendan Murry,Corporate,East,2015-09-15,6,808.162,95.58160000000001,Organic,3.92,SEO_Content,24.38
+BM-11650,Brian Moss,Corporate,East,2014-07-09,11,7294.185,2199.2781,Email,8.2,Promotional_Blast,268.2
+BM-11785,Bryan Mills,Consumer,East,2014-06-06,10,1338.842,137.7439,Paid Search,16.55,Brand_Awareness_PPC,8.32
+BN-11470,Brad Norvell,Corporate,South,2014-09-12,4,265.296,36.6131,Social Media,28.93,Facebook_Prospecting,1.27
+BN-11515,Bradley Nguyen,Consumer,West,2014-03-17,5,1459.344,340.7054,Organic,16.34,Referral_Program,20.85
+BO-11350,Bill Overfelt,Corporate,West,2016-01-03,5,2682.728,278.77700000000004,Email,3.4,Re_Engagement,81.99
+BO-11425,Bobby Odegard,Consumer,South,2015-09-10,2,130.83,59.4522,Social Media,23.31,LinkedIn_B2B,2.55
+BP-11050,Barry Pond,Corporate,East,2014-10-12,5,983.42,209.78300000000002,Paid Search,38.54,Product_Category_PPC,5.44
+BP-11095,Bart Pistole,Corporate,Central,2014-06-07,12,2442.044,433.9751,Email,5.28,Promotional_Blast,82.19
+BP-11155,Becky Pak,Consumer,South,2015-06-04,6,1697.8609999999999,647.3847000000001,Organic,23.67,Referral_Program,27.35
+BP-11185,Ben Peterman,Corporate,West,2015-03-24,9,3675.861,363.5991,Email,6.28,Welcome_Series,57.9
+BP-11230,Benjamin Patterson,Consumer,West,2014-04-20,5,1181.49,-197.2695,Paid Search,16.44,Competitor_Keywords,-12.0
+BP-11290,Beth Paige,Consumer,Central,2014-10-03,7,2475.157,-319.0637,Paid Search,39.73,Product_Category_PPC,-8.03
+BS-11365,Bill Shonely,Corporate,East,2014-05-04,5,10501.653,2616.0643999999998,Email,5.63,Welcome_Series,464.67
+BS-11380,Bill Stewart,Corporate,Central,2014-11-29,5,3887.834,-17.532200000000024,Direct,4.48,Sales_Outreach,-3.91
+BS-11590,Brendan Sweed,Corporate,West,2014-01-14,6,2454.928,381.7807,Direct,2.1,Sales_Outreach,181.8
+BS-11665,Brian Stugart,Consumer,East,2014-06-23,3,3288.1099999999997,238.73680000000002,Social Media,28.99,Instagram_Retargeting,8.24
+BS-11755,Bruce Stewart,Consumer,West,2014-05-18,7,2562.382,-113.29840000000003,Organic,5.37,Blog_Traffic,-21.1
+BS-11800,Bryan Spruell,Home Office,East,2015-09-26,2,949.4300000000001,194.0516,Email,4.46,Re_Engagement,43.51
+BT-11305,Beth Thompson,Home Office,West,2014-04-25,5,2567.656,417.5918,Display,47.45,Prospecting_Display,8.8
+BT-11395,Bill Tyler,Corporate,Central,2014-10-28,6,2186.6130000000003,257.9163,Paid Search,49.16,Brand_Awareness_PPC,5.25
+BT-11440,Bobby Trafton,Consumer,West,2014-06-04,4,603.876,-77.5256,Email,9.17,Promotional_Blast,-8.45
+BT-11485,Brad Thomas,Home Office,East,2015-12-27,2,415.19599999999997,126.8694,Organic,10.26,SEO_Content,12.37
+BT-11530,Bradley Talbott,Home Office,West,2014-05-21,5,2684.4919999999997,409.4983,Organic,5.2,Blog_Traffic,78.75
+BT-11680,Brian Thompson,Consumer,East,2014-11-28,7,3196.752,447.74839999999995,Social Media,34.44,LinkedIn_B2B,13.0
+BV-11245,Benjamin Venier,Corporate,Central,2015-03-26,5,1523.2730000000001,315.2214,Display,42.57,Retargeting_Display,7.4
+BW-11065,Barry Weirich,Consumer,South,2014-05-25,3,385.516,-58.28659999999999,Display,41.86,Prospecting_Display,-1.39
+BW-11110,Bart Watters,Corporate,Central,2015-03-20,8,4750.358,921.2574,Email,10.31,Promotional_Blast,89.36
+BW-11200,Ben Wallace,Consumer,South,2014-08-12,6,1738.406,246.9973,Email,6.02,Promotional_Blast,41.03
+CA-11965,Carol Adams,Corporate,South,2014-01-26,6,3789.7228,1143.3817,Organic,11.16,SEO_Content,102.45
+CA-12055,Cathy Armstrong,Home Office,Central,2015-09-05,5,1679.7240000000002,211.2559,Social Media,23.59,Facebook_Prospecting,8.96
+CA-12265,Christina Anderson,Consumer,Central,2014-03-25,9,2648.2872,279.6183,Social Media,23.49,Facebook_Prospecting,11.9
+CA-12310,Christine Abelman,Corporate,East,2014-07-19,4,1421.954,246.02179999999998,Paid Search,17.73,Product_Category_PPC,13.88
+CA-12775,Cynthia Arntzen,Consumer,South,2014-06-28,7,3041.566,204.48950000000002,Social Media,5.9,LinkedIn_B2B,34.66
+CB-12025,Cassandra Brandow,Consumer,East,2014-03-21,10,6076.139,150.2089,Social Media,25.22,Facebook_Prospecting,5.96
+CB-12415,Christy Brittain,Consumer,East,2015-11-05,8,1949.2,272.3883,Paid Search,17.28,Competitor_Keywords,15.76
+CB-12535,Claudia Bergmann,Corporate,South,2015-01-02,8,4246.4555,1049.5601,Email,5.0,Re_Engagement,209.91
+CC-12100,Chad Cunningham,Home Office,Central,2014-12-16,6,1770.945,208.5912,Organic,12.75,SEO_Content,16.36
+CC-12145,Charles Crestani,Consumer,West,2014-07-20,7,2471.65,392.2825,Paid Search,12.75,Competitor_Keywords,30.77
+CC-12220,Chris Cortes,Consumer,Central,2014-09-09,12,3913.418,393.9618,Paid Search,56.67,Product_Category_PPC,6.95
+CC-12370,Christopher Conant,Consumer,South,2016-05-23,5,12129.072000000002,2177.0493,Email,11.53,Promotional_Blast,188.82
+CC-12430,Chuck Clark,Home Office,Central,2015-09-06,10,2870.05,424.6583,Organic,10.08,Blog_Traffic,42.13
+CC-12475,Cindy Chapman,Consumer,East,2014-05-16,9,1659.438,154.851,Social Media,25.98,Instagram_Retargeting,5.96
+CC-12550,Clay Cheatham,Consumer,West,2017-06-15,3,113.832,33.870599999999996,Organic,7.78,Blog_Traffic,4.35
+CC-12610,Corey Catlett,Corporate,East,2014-08-27,7,2540.631,331.434,Paid Search,7.97,Product_Category_PPC,41.59
+CC-12670,Craig Carreira,Consumer,East,2014-12-23,7,2269.7015,187.8399,Paid Search,18.74,Product_Category_PPC,10.02
+CC-12685,Craig Carroll,Consumer,South,2014-03-22,4,2854.1150000000002,850.1591,Paid Search,47.94,Product_Category_PPC,17.73
+CD-11920,Carlos Daly,Consumer,West,2014-03-24,5,2033.968,426.661,Paid Search,31.81,Brand_Awareness_PPC,13.41
+CD-11980,Carol Darley,Consumer,Central,2016-11-24,3,639.766,-206.7172,Organic,1.94,Referral_Program,-106.56
+CD-12280,Christina DeMoss,Consumer,West,2017-11-05,2,1205.584,233.0274,Email,7.13,Promotional_Blast,32.68
+CD-12790,Cynthia Delaney,Home Office,West,2014-02-02,5,1860.732,403.8422,Email,10.95,Re_Engagement,36.88
+CG-12040,Catherine Glotzbach,Home Office,East,2015-06-01,6,904.4680000000001,86.5106,Social Media,15.42,Instagram_Retargeting,5.61
+CG-12520,Claire Gute,Consumer,South,2015-10-15,3,1148.7800000000002,169.93439999999998,Organic,3.6,SEO_Content,47.2
+CH-12070,Cathy Hwang,Home Office,South,2015-06-25,3,1537.236,195.15109999999999,Paid Search,25.15,Competitor_Keywords,7.76
+CJ-11875,Carl Jackson,Corporate,East,2016-12-30,1,16.52,1.652,Paid Search,50.46,Competitor_Keywords,0.03
+CJ-12010,Caroline Jumper,Consumer,West,2016-03-10,8,11164.974,858.7414,Social Media,10.35,Instagram_Retargeting,82.97
+CK-12205,Chloris Kastensmidt,Consumer,East,2014-03-11,13,3154.855,141.2831,Social Media,21.05,Facebook_Prospecting,6.71
+CK-12325,Christine Kargatis,Home Office,West,2014-03-14,5,2945.321,261.22090000000003,Social Media,35.89,LinkedIn_B2B,7.28
+CK-12595,Clytie Kelty,Consumer,East,2014-12-26,11,2372.75,497.70980000000003,Paid Search,43.88,Product_Category_PPC,11.34
+CK-12760,Cyma Kinney,Corporate,East,2014-02-07,9,1582.109,-338.4311,Email,6.18,Welcome_Series,-54.76
+CL-11890,Carl Ludwig,Consumer,East,2014-07-26,4,1262.0140000000001,328.0847,Organic,21.74,Blog_Traffic,15.09
+CL-12565,Clay Ludtke,Consumer,Central,2014-03-04,12,10880.546,1933.7830999999999,Email,5.39,Re_Engagement,358.77
+CL-12700,Craig Leslie,Home Office,Central,2016-04-24,5,2353.586,229.00990000000002,Email,6.18,Welcome_Series,37.06
+CM-11815,Candace McMahon,Corporate,Central,2014-11-14,6,1673.888,214.463,Direct,1.0,Word_of_Mouth,214.46
+CM-11935,Carlos Meador,Consumer,South,2015-09-24,2,565.392,-43.732400000000005,Email,9.84,Welcome_Series,-4.44
+CM-12115,Chad McGuire,Consumer,East,2015-03-29,4,1661.6100000000001,409.0679,Social Media,28.18,Instagram_Retargeting,14.52
+CM-12160,Charles McCrossin,Consumer,Central,2016-10-21,6,2533.314,-394.3686,Social Media,22.64,LinkedIn_B2B,-17.42
+CM-12190,Charlotte Melton,Consumer,East,2015-09-18,6,1475.144,91.2033,Direct,2.03,Sales_Outreach,44.93
+CM-12235,Chris McAfee,Consumer,Central,2016-05-01,5,2305.712,365.0387,Social Media,23.87,Facebook_Prospecting,15.29
+CM-12385,Christopher Martinez,Consumer,South,2015-03-16,4,8954.019999999999,3899.8903999999998,Organic,6.89,Referral_Program,566.02
+CM-12445,Chuck Magee,Consumer,West,2014-06-09,3,287.99,64.4296,Email,4.93,Re_Engagement,13.07
+CM-12655,Corinna Mitchell,Home Office,West,2015-03-19,6,6339.5576,1572.4585,Organic,11.81,Referral_Program,133.15
+CM-12715,Craig Molinari,Corporate,Central,2014-03-07,4,3984.4524,176.3108,Display,46.72,Retargeting_Display,3.77
+CP-12085,Cathy Prescott,Corporate,East,2014-12-04,8,5402.254,427.0258,Paid Search,34.62,Brand_Awareness_PPC,12.33
+CP-12340,Christine Phan,Corporate,East,2014-03-17,8,5888.275,-1850.3029000000001,Display,27.35,Prospecting_Display,-67.65
+CR-12580,Clay Rozendal,Home Office,Central,2016-04-18,4,2148.852,74.40129999999999,Direct,1.0,Sales_Outreach,74.4
+CR-12625,Corey Roper,Home Office,East,2014-06-01,3,475.9,144.7594,Organic,3.9,SEO_Content,37.12
+CR-12730,Craig Reiter,Consumer,East,2014-08-20,4,1600.55,306.9176,Social Media,35.98,Facebook_Prospecting,8.53
+CR-12820,Cyra Reiten,Home Office,East,2015-01-24,3,1397.8724,83.27029999999999,Organic,7.8,SEO_Content,10.68
+CS-11845,Cari Sayre,Corporate,West,2014-12-14,5,1278.954,185.3776,Paid Search,28.15,Competitor_Keywords,6.59
+CS-11860,Cari Schnelling,Consumer,South,2014-05-02,6,537.632,105.8275,Organic,14.65,Referral_Program,7.22
+CS-11950,Carlos Soltero,Consumer,Central,2014-06-08,11,3036.547,-126.4223,Social Media,19.85,LinkedIn_B2B,-6.37
+CS-12130,Chad Sievert,Consumer,West,2014-08-05,4,884.64,143.8339,Paid Search,38.25,Product_Category_PPC,3.76
+CS-12175,Charles Sheldon,Corporate,South,2014-08-12,5,844.4580000000001,113.1405,Direct,2.46,Sales_Outreach,45.99
+CS-12250,Chris Selesnick,Corporate,South,2014-01-13,12,2754.216,738.3626,Direct,1.77,Word_of_Mouth,417.15
+CS-12355,Christine Sundaresam,Consumer,South,2014-08-15,11,3202.1620000000003,831.9432,Display,66.68,Prospecting_Display,12.48
+CS-12400,Christopher Schild,Home Office,Central,2014-09-26,9,3651.8585000000003,-342.80330000000004,Social Media,31.59,LinkedIn_B2B,-10.85
+CS-12460,Chuck Sachs,Consumer,South,2017-07-03,2,550.644,156.2593,Social Media,32.84,LinkedIn_B2B,4.76
+CS-12490,Cindy Schnelling,Corporate,Central,2015-01-12,4,1077.2285,-302.8761,Organic,4.02,SEO_Content,-75.34
+CS-12505,Cindy Stewart,Consumer,South,2014-03-26,6,5690.054999999999,-6626.389499999999,Organic,6.5,Blog_Traffic,-1019.44
+CT-11995,Carol Triggs,Consumer,Central,2014-05-07,8,3241.898,161.22629999999995,Social Media,21.92,Facebook_Prospecting,7.36
+CV-12295,Christina VanderZanden,Consumer,West,2014-03-28,5,2830.6279999999997,493.0861,Social Media,19.22,Facebook_Prospecting,25.65
+CV-12805,Cynthia Voltz,Corporate,East,2016-05-09,9,2370.3136,98.99749999999999,Paid Search,37.65,Brand_Awareness_PPC,2.63
+CW-11905,Carl Weiss,Home Office,Central,2014-06-09,6,1136.592,370.8298,Paid Search,35.37,Competitor_Keywords,10.48
+CY-12745,Craig Yedwab,Corporate,West,2014-12-12,8,2900.026,60.64670000000001,Paid Search,44.29,Competitor_Keywords,1.37
+Co-12640,Corey-Lock,Consumer,East,2014-06-20,5,1300.076,205.62820000000002,Paid Search,22.8,Product_Category_PPC,9.02
+DA-13450,Dianna Arnett,Home Office,Central,2014-04-25,4,156.76,56.7904,Organic,11.02,SEO_Content,5.15
+DB-12910,Daniel Byrd,Home Office,South,2014-10-24,8,2171.599,431.3748,Organic,15.77,Referral_Program,27.35
+DB-12970,Darren Budd,Corporate,West,2014-11-12,5,2839.2272,213.00289999999998,Direct,2.05,Word_of_Mouth,103.9
+DB-13060,Dave Brooks,Consumer,West,2014-03-01,7,4531.646,473.0272,Direct,1.67,Sales_Outreach,283.25
+DB-13120,David Bremer,Corporate,West,2015-05-01,7,2973.094,-1421.7692,Paid Search,44.32,Competitor_Keywords,-32.08
+DB-13210,Dean Braden,Consumer,Central,2015-03-22,10,2332.577,169.9679,Organic,1.0,Blog_Traffic,169.97
+DB-13270,Deborah Brumfield,Home Office,West,2014-02-04,8,4655.897,841.8263999999999,Display,61.55,Retargeting_Display,13.68
+DB-13360,Dennis Bolton,Home Office,East,2014-11-19,5,1081.466,291.0085,Paid Search,24.37,Competitor_Keywords,11.94
+DB-13405,Denny Blanton,Consumer,Central,2015-08-08,4,1711.692,438.9092,Social Media,21.96,Facebook_Prospecting,19.99
+DB-13555,Dorothy Badders,Corporate,South,2014-04-21,7,3908.8028,109.32700000000001,Paid Search,43.25,Product_Category_PPC,2.53
+DB-13615,Doug Bickford,Consumer,West,2014-09-30,7,1989.05,438.80119999999994,Social Media,28.94,Facebook_Prospecting,15.16
+DB-13660,Duane Benoit,Consumer,East,2014-06-17,7,1155.202,177.67350000000002,Direct,1.0,Word_of_Mouth,177.67
+DC-12850,Dan Campbell,Consumer,South,2014-07-05,9,3336.168,-1441.6312999999998,Organic,5.78,SEO_Content,-249.42
+DC-13285,Debra Catini,Consumer,Central,2014-12-29,5,1174.618,132.06820000000002,Paid Search,28.84,Product_Category_PPC,4.58
+DD-13570,Dorothy Dickinson,Consumer,Central,2014-03-31,6,269.542,36.4344,Direct,4.97,Sales_Outreach,7.33
+DE-13255,Deanra Eno,Home Office,East,2014-08-22,5,2550.874,464.47139999999996,Paid Search,33.68,Product_Category_PPC,13.79
+DF-13135,David Flashing,Consumer,West,2014-10-04,3,2390.534,-259.3097,Social Media,22.49,Instagram_Retargeting,-11.53
+DG-13300,Deirdre Greer,Corporate,East,2014-11-01,5,3195.818,562.7761,Email,4.7,Promotional_Blast,119.74
+DH-13075,Dave Hallsten,Corporate,South,2014-11-21,6,4932.872,1193.7404,Email,11.58,Re_Engagement,103.09
+DH-13675,Duane Huffman,Home Office,East,2014-08-12,4,1043.096,116.667,Email,5.67,Welcome_Series,20.58
+DJ-13420,Denny Joy,Corporate,South,2014-12-08,4,2012.52,483.03499999999997,Email,8.93,Welcome_Series,54.09
+DJ-13510,Don Jones,Corporate,South,2014-08-17,8,2501.6879999999996,345.2521,Paid Search,26.11,Brand_Awareness_PPC,13.22
+DJ-13630,Doug Jacobs,Consumer,East,2015-12-14,3,3356.398,731.5644,Social Media,9.8,Facebook_Prospecting,74.65
+DK-12835,Damala Kotsonis,Corporate,West,2014-03-26,12,3256.48,881.1228000000001,Email,1.0,Welcome_Series,881.12
+DK-12895,Dana Kaydos,Consumer,Central,2015-03-08,5,4282.176,937.6496,Organic,11.81,Blog_Traffic,79.39
+DK-12985,Darren Koutras,Consumer,South,2014-11-24,5,1687.04,-107.35379999999998,Email,8.23,Welcome_Series,-13.04
+DK-13090,Dave Kipp,Consumer,West,2015-03-02,7,2650.557,536.3935,Social Media,35.29,Instagram_Retargeting,15.2
+DK-13150,David Kendrick,Corporate,Central,2014-12-05,2,797.832,249.9447,Direct,2.85,Sales_Outreach,87.7
+DK-13225,Dean Katz,Corporate,East,2014-03-14,9,4802.394,209.89940000000004,Display,33.77,Prospecting_Display,6.22
+DK-13375,Dennis Kane,Consumer,East,2014-09-07,8,3318.486,377.0799,Direct,3.59,Sales_Outreach,105.04
+DL-12865,Dan Lawera,Consumer,East,2014-06-29,8,1503.112,322.2449,Social Media,12.12,LinkedIn_B2B,26.59
+DL-12925,Daniel Lacy,Consumer,West,2014-09-09,6,3272.2,4.213200000000029,Direct,3.55,Word_of_Mouth,1.19
+DL-13315,Delfina Latchford,Consumer,East,2014-01-16,8,1458.258,288.8732,Social Media,24.51,Instagram_Retargeting,11.79
+DL-13330,Denise Leinenbach,Consumer,West,2014-06-23,4,585.02,222.6812,Social Media,21.02,LinkedIn_B2B,10.59
+DL-13495,Dionis Lloyd,Corporate,West,2015-12-25,8,3539.322,-52.78799999999997,Direct,2.89,Word_of_Mouth,-18.27
+DM-12955,Dario Medina,Corporate,Central,2014-09-30,7,1322.034,108.7583,Display,60.74,Prospecting_Display,1.79
+DM-13015,Darrin Martin,Consumer,West,2014-09-14,7,6345.103,1677.3931,Display,42.69,Retargeting_Display,39.29
+DM-13345,Denise Monton,Corporate,South,2014-11-03,8,4074.4719999999998,1319.0586,Direct,2.37,Sales_Outreach,556.56
+DM-13525,Don Miller,Corporate,Central,2014-07-05,3,1376.792,199.7688,Paid Search,8.81,Competitor_Keywords,22.68
+DN-13690,Duane Noonan,Consumer,West,2014-09-20,7,2139.79,540.5405000000001,Display,17.47,Retargeting_Display,30.94
+DO-13435,Denny Ordway,Consumer,South,2014-10-03,9,1300.0315,-38.90860000000001,Email,7.61,Promotional_Blast,-5.11
+DO-13645,Doug O'Connell,Consumer,West,2015-11-07,7,1267.316,294.0676,Email,3.52,Promotional_Blast,83.54
+DP-13000,Darren Powers,Consumer,Central,2014-01-03,9,1050.636,241.4524,Email,5.09,Welcome_Series,47.44
+DP-13105,Dave Poirier,Corporate,West,2015-08-22,8,2215.002,563.1761,Email,6.34,Re_Engagement,88.83
+DP-13165,David Philippe,Consumer,East,2014-12-02,2,1058.616,-40.93759999999999,Organic,17.76,SEO_Content,-2.31
+DP-13390,Dennis Pardue,Home Office,Central,2014-07-05,9,5480.723999999999,1571.8318,Email,9.08,Welcome_Series,173.11
+DR-12880,Dan Reichenbach,Corporate,Central,2015-09-25,9,6528.034000000001,1641.8613,Email,6.5,Promotional_Blast,252.59
+DR-12940,Daniel Raglin,Home Office,East,2014-03-28,8,8350.868,2869.0759999999996,Paid Search,45.87,Competitor_Keywords,62.55
+DS-13030,Darrin Sayre,Home Office,West,2014-07-09,4,1762.213,193.3319,Paid Search,38.53,Competitor_Keywords,5.02
+DS-13180,David Smith,Corporate,Central,2014-04-28,9,2881.8128,163.6993,Paid Search,7.23,Competitor_Keywords,22.64
+DV-13045,Darrin Van Huff,Corporate,West,2016-06-12,5,1119.483,-427.184,Email,10.33,Re_Engagement,-41.35
+DV-13465,Dianna Vittorini,Consumer,West,2014-06-22,6,3341.587,353.2127,Display,41.0,Retargeting_Display,8.61
+DW-13195,David Wiener,Corporate,Central,2014-01-18,6,1080.751,-86.87379999999999,Organic,1.0,Referral_Program,-86.87
+DW-13480,Dianna Wilson,Home Office,Central,2014-06-01,5,5271.628,1348.7556,Social Media,30.83,Instagram_Retargeting,43.75
+DW-13540,Don Weiss,Consumer,West,2016-02-27,5,344.08,69.6672,Display,42.96,Prospecting_Display,1.62
+DW-13585,Dorothy Wardle,Corporate,East,2014-08-24,7,1204.854,-266.8966,Paid Search,27.82,Competitor_Keywords,-9.59
+Dl-13600,Dorris liebe,Corporate,Central,2014-03-30,5,755.602,175.2388,Paid Search,37.56,Competitor_Keywords,4.67
+Dp-13240,Dean percer,Home Office,West,2014-05-26,11,7198.7609999999995,333.36479999999995,Social Media,21.94,LinkedIn_B2B,15.19
+EA-14035,Erin Ashbrook,Corporate,South,2014-09-13,13,2846.705,-52.74059999999998,Social Media,25.63,Instagram_Retargeting,-2.06
+EB-13705,Ed Braxton,Corporate,East,2014-07-08,9,3644.978,13.621500000000005,Email,5.63,Welcome_Series,2.42
+EB-13750,Edward Becker,Corporate,West,2015-03-12,10,3236.314,-80.28599999999999,Paid Search,27.1,Brand_Awareness_PPC,-2.96
+EB-13840,Ellis Ballard,Corporate,West,2014-05-30,5,4358.128,656.1988,Paid Search,14.78,Competitor_Keywords,44.4
+EB-13870,Emily Burns,Consumer,West,2014-05-05,10,2767.219,261.5315,Social Media,26.39,Facebook_Prospecting,9.91
+EB-13930,Eric Barreto,Consumer,West,2014-02-02,5,944.6000000000001,0.6042000000000058,Display,68.83,Retargeting_Display,0.01
+EB-13975,Erica Bern,Corporate,West,2016-01-04,4,1643.255,162.8781,Paid Search,24.17,Product_Category_PPC,6.74
+EB-14110,Eugene Barchas,Consumer,East,2015-04-13,6,3071.126,184.7656,Paid Search,18.21,Competitor_Keywords,10.15
+EB-14170,Evan Bailliet,Consumer,South,2014-09-29,6,1186.326,282.1701,Paid Search,21.29,Competitor_Keywords,13.25
+EC-14050,Erin Creighton,Consumer,East,2014-12-17,5,461.914,96.4256,Paid Search,10.79,Product_Category_PPC,8.94
+ED-13885,Emily Ducich,Home Office,West,2014-08-09,8,3484.92,670.4435000000001,Social Media,20.28,Facebook_Prospecting,33.06
+EG-13900,Emily Grady,Consumer,East,2015-11-02,5,1832.02,104.2656,Social Media,21.08,Facebook_Prospecting,4.95
+EH-13765,Edward Hooks,Corporate,East,2014-04-12,12,10310.880000000001,1393.5154,Display,38.63,Prospecting_Display,36.07
+EH-13945,Eric Hoffmann,Consumer,West,2014-07-02,8,684.1709999999999,53.53980000000001,Email,8.55,Promotional_Blast,6.26
+EH-13990,Erica Hackney,Consumer,South,2014-01-15,6,825.9499999999999,150.3759,Organic,6.9,SEO_Content,21.79
+EH-14005,Erica Hernandez,Home Office,West,2014-05-13,7,1219.53,-94.14079999999997,Paid Search,21.43,Product_Category_PPC,-4.39
+EH-14125,Eugene Hildebrand,Home Office,Central,2014-10-19,10,3082.653,96.27019999999999,Email,2.32,Re_Engagement,41.5
+EH-14185,Evan Henry,Consumer,South,2014-05-22,6,923.884,242.1107,Email,4.12,Promotional_Blast,58.76
+EJ-13720,Ed Jacobs,Consumer,West,2014-01-27,4,2162.174,387.0176,Organic,1.0,Referral_Program,387.02
+EJ-14155,Eva Jacobs,Consumer,South,2014-03-03,5,2656.691,451.87550000000005,Paid Search,38.22,Product_Category_PPC,11.82
+EK-13795,Eileen Kiefer,Home Office,West,2014-03-18,4,1303.478,97.10659999999999,Organic,5.06,Blog_Traffic,19.19
+EL-13735,Ed Ludwig,Home Office,East,2016-04-22,2,124.28,27.1154,Email,3.08,Re_Engagement,8.8
+EM-13810,Eleni McCrary,Corporate,West,2015-06-07,5,2567.0099999999998,-133.8275,Email,6.24,Re_Engagement,-21.45
+EM-13825,Elizabeth Moffitt,Corporate,Central,2014-12-02,8,2339.598,682.5541999999999,Email,3.57,Re_Engagement,191.19
+EM-13960,Eric Murdock,Consumer,East,2015-10-01,5,933.704,102.29599999999999,Social Media,13.86,Facebook_Prospecting,7.38
+EM-14065,Erin Mull,Consumer,East,2014-07-22,4,228.99,40.15459999999999,Paid Search,15.26,Competitor_Keywords,2.63
+EM-14095,Eudokia Martin,Corporate,West,2015-08-07,4,1041.0420000000001,240.2362,Social Media,16.11,Instagram_Retargeting,14.91
+EM-14140,Eugene Moren,Home Office,West,2014-07-19,6,4588.436000000001,1319.3655,Paid Search,30.62,Competitor_Keywords,43.09
+EM-14200,Evan Minnotte,Home Office,South,2015-12-20,3,366.822,21.7721,Organic,14.55,SEO_Content,1.5
+EN-13780,Edward Nazzal,Consumer,East,2015-05-30,4,2199.366,496.1131,Organic,5.63,SEO_Content,88.12
+EP-13915,Emily Phan,Consumer,Central,2014-07-06,17,5478.0608,144.9578,Social Media,21.97,Instagram_Retargeting,6.6
+ER-13855,Elpida Rittenbach,Corporate,Central,2015-12-21,3,1245.788,-295.7398,Email,4.68,Welcome_Series,-63.19
+ES-14020,Erica Smith,Consumer,West,2014-09-20,5,3510.4579999999996,1003.2935,Paid Search,46.98,Competitor_Keywords,21.36
+ES-14080,Erin Smith,Corporate,South,2014-10-02,9,4657.924,246.6661,Paid Search,44.75,Brand_Awareness_PPC,5.51
+FA-14230,Frank Atkinson,Corporate,West,2014-09-19,7,2984.054,520.5229,Email,2.07,Re_Engagement,251.46
+FC-14245,Frank Carlisle,Home Office,East,2015-06-13,7,3418.742,1217.1662000000001,Social Media,22.25,LinkedIn_B2B,54.7
+FC-14335,Fred Chung,Corporate,Central,2014-10-10,7,3889.366,714.2926,Paid Search,29.53,Competitor_Keywords,24.19
+FG-14260,Frank Gastineau,Home Office,West,2014-05-21,7,1383.144,394.73969999999997,Paid Search,22.5,Brand_Awareness_PPC,17.54
+FH-14275,Frank Hawley,Corporate,Central,2014-04-06,10,4256.272,1073.2676,Paid Search,20.49,Brand_Awareness_PPC,52.38
+FH-14350,Fred Harton,Consumer,West,2015-08-23,4,2271.284,706.289,Paid Search,18.06,Product_Category_PPC,39.11
+FH-14365,Fred Hopkins,Corporate,East,2014-10-20,8,6987.196,2050.2826,Direct,1.91,Word_of_Mouth,1073.45
+FM-14215,Filia McAdams,Corporate,East,2014-03-11,10,2456.638,249.6808,Paid Search,1.0,Brand_Awareness_PPC,249.68
+FM-14290,Frank Merwin,Home Office,West,2014-08-26,9,3736.198,198.10949999999997,Direct,4.37,Word_of_Mouth,45.33
+FM-14380,Fred McMath,Consumer,West,2015-07-12,9,2523.266,191.4898,Paid Search,32.68,Brand_Awareness_PPC,5.86
+FO-14305,Frank Olsen,Consumer,East,2014-06-09,10,2678.438,215.59689999999998,Organic,9.58,SEO_Content,22.5
+FP-14320,Frank Preis,Consumer,West,2014-12-07,8,4046.746,406.44730000000004,Organic,6.38,SEO_Content,63.71
+FW-14395,Fred Wasserman,Corporate,South,2015-03-22,3,79.75,23.491300000000003,Email,4.4,Welcome_Series,5.34
+GA-14515,George Ashbrook,Consumer,West,2014-05-18,8,3919.7760000000003,840.899,Display,68.65,Prospecting_Display,12.25
+GA-14725,Guy Armstrong,Consumer,East,2014-02-11,11,1398.382,136.70790000000002,Paid Search,47.44,Brand_Awareness_PPC,2.88
+GB-14530,George Bell,Corporate,East,2014-04-28,11,1568.44,7.837100000000003,Organic,7.18,Referral_Program,1.09
+GB-14575,Giulietta Baptist,Consumer,East,2015-06-12,5,4716.288,1135.8393,Social Media,12.98,Instagram_Retargeting,87.51
+GD-14590,Giulietta Dortch,Corporate,East,2014-05-05,4,1888.07,230.93729999999996,Email,4.62,Welcome_Series,49.99
+GG-14650,Greg Guthrie,Corporate,South,2014-10-31,9,2224.0,12.698500000000008,Email,5.08,Re_Engagement,2.5
+GH-14410,Gary Hansen,Home Office,West,2014-07-09,9,2819.4669999999996,-576.8335,Social Media,11.75,Instagram_Retargeting,-49.09
+GH-14425,Gary Hwang,Consumer,West,2014-06-17,4,4172.8460000000005,1176.4181,Social Media,24.41,LinkedIn_B2B,48.19
+GH-14485,Gene Hale,Corporate,Central,2015-10-08,2,1361.2440000000001,-95.4498,Email,5.55,Welcome_Series,-17.2
+GH-14665,Greg Hansen,Consumer,Central,2015-11-17,2,146.94080000000002,-5.810200000000001,Paid Search,23.11,Brand_Awareness_PPC,-0.25
+GK-14620,Grace Kelly,Corporate,West,2014-06-25,9,6497.27,1448.5525,Paid Search,20.78,Brand_Awareness_PPC,69.71
+GM-14440,Gary McGarr,Consumer,West,2014-03-21,7,3582.8199999999997,347.266,Email,8.28,Welcome_Series,41.94
+GM-14455,Gary Mitchum,Home Office,Central,2014-04-11,6,3078.624,793.2814000000001,Organic,6.38,Blog_Traffic,124.34
+GM-14500,Gene McClure,Consumer,East,2014-08-09,10,1255.682,441.3185,Social Media,43.9,Instagram_Retargeting,10.05
+GM-14680,Greg Matthias,Consumer,West,2014-05-10,6,3163.628,35.48649999999999,Social Media,23.53,LinkedIn_B2B,1.51
+GM-14695,Greg Maxwell,Corporate,West,2014-04-05,3,6049.966,188.7235,Paid Search,29.07,Brand_Awareness_PPC,6.49
+GP-14740,Guy Phonely,Corporate,East,2014-04-06,2,236.53,31.837600000000002,Paid Search,33.86,Product_Category_PPC,0.94
+GR-14560,Georgia Rosenberg,Corporate,West,2014-11-19,2,1284.38,359.83320000000003,Direct,6.16,Sales_Outreach,58.41
+GT-14635,Grant Thornton,Corporate,South,2014-06-06,3,9351.212,-4108.6589,Paid Search,20.87,Brand_Awareness_PPC,-196.87
+GT-14710,Greg Tran,Consumer,Central,2014-05-23,11,11820.119999999999,2163.4269,Paid Search,35.06,Brand_Awareness_PPC,61.71
+GT-14755,Guy Thornton,Consumer,Central,2015-02-18,4,226.436,-6.139200000000002,Paid Search,34.52,Competitor_Keywords,-0.18
+GW-14605,Giulietta Weimer,Consumer,West,2014-03-01,7,2189.019,-268.54229999999995,Social Media,31.31,Instagram_Retargeting,-8.58
+GZ-14470,Gary Zandusky,Consumer,Central,2014-08-05,9,4355.150000000001,1087.7539,Social Media,19.57,Instagram_Retargeting,55.58
+GZ-14545,George Zrebassa,Corporate,East,2014-09-28,4,2454.6220000000003,828.661,Display,52.21,Prospecting_Display,15.87
+HA-14905,Helen Abelman,Consumer,East,2014-06-30,7,2163.3,270.8574,Social Media,15.91,Instagram_Retargeting,17.02
+HA-14920,Helen Andreada,Consumer,West,2014-10-11,8,2584.158,99.1445,Social Media,1.93,Facebook_Prospecting,51.37
+HD-14785,Harold Dahlen,Home Office,East,2014-05-11,3,251.36,-135.87599999999998,Organic,2.1,Blog_Traffic,-64.7
+HE-14800,Harold Engle,Corporate,Central,2016-01-30,4,883.5319999999999,274.4028,Direct,3.03,Word_of_Mouth,90.56
+HF-14995,Herbert Flentye,Consumer,Central,2014-05-26,7,2533.1639999999998,-13.876799999999989,Social Media,30.03,Facebook_Prospecting,-0.46
+HG-14845,Harry Greene,Consumer,South,2014-04-29,5,785.628,147.0032,Email,6.29,Promotional_Blast,23.37
+HG-14965,Henry Goldwyn,Corporate,West,2014-09-20,12,3247.642,-2797.9635000000003,Paid Search,29.98,Competitor_Keywords,-93.33
+HG-15025,Hunter Glantz,Consumer,Central,2014-10-14,7,3690.284,804.6113,Social Media,27.12,Facebook_Prospecting,29.67
+HH-15010,Hilary Holden,Corporate,West,2014-08-29,2,218.668,86.7342,Paid Search,34.11,Competitor_Keywords,2.54
+HJ-14875,Heather Jas,Home Office,South,2015-04-13,5,358.1,98.6548,Email,9.74,Promotional_Blast,10.13
+HK-14890,Heather Kirkland,Corporate,South,2014-06-10,8,4877.784,956.9451,Direct,2.03,Sales_Outreach,471.4
+HL-15040,Hunter Lopez,Consumer,Central,2014-01-20,6,12873.297999999999,5622.4292000000005,Social Media,25.63,LinkedIn_B2B,219.37
+HM-14860,Harry Marie,Corporate,East,2014-07-21,10,8236.7648,2437.9836,Paid Search,46.12,Brand_Awareness_PPC,52.86
+HM-14980,Henry MacAllister,Consumer,East,2015-10-02,4,736.276,117.2755,Organic,12.01,Referral_Program,9.76
+HP-14815,Harold Pawlan,Home Office,Central,2014-05-06,7,1990.314,373.8637,Social Media,33.58,Instagram_Retargeting,11.13
+HR-14770,Hallie Redmond,Home Office,West,2014-03-01,5,1299.288,185.5794,Paid Search,22.66,Product_Category_PPC,8.19
+HR-14830,Harold Ryan,Corporate,West,2014-11-24,7,5248.787,1196.9504,Paid Search,39.57,Competitor_Keywords,30.25
+HW-14935,Helen Wasserman,Corporate,West,2015-09-27,8,9300.254,2164.1611,Email,8.92,Re_Engagement,242.62
+HZ-14950,Henia Zydlo,Consumer,East,2016-03-14,5,886.52,-130.3879,Email,1.1,Promotional_Blast,-118.53
+IG-15085,Ivan Gibson,Consumer,West,2014-10-18,4,744.574,320.4982,Social Media,24.53,LinkedIn_B2B,13.07
+IL-15100,Ivan Liston,Consumer,West,2014-08-01,7,5040.736,1121.937,Paid Search,30.05,Product_Category_PPC,37.34
+IM-15055,Ionia McGrath,Consumer,West,2014-01-23,3,2872.63,975.7701,Social Media,29.52,LinkedIn_B2B,33.05
+IM-15070,Irene Maddox,Consumer,West,2014-12-19,7,4930.474,514.6527,Social Media,23.62,Facebook_Prospecting,21.79
+JA-15970,Joseph Airdo,Consumer,West,2014-09-17,8,6491.026,-819.4217000000001,Email,13.93,Re_Engagement,-58.82
+JB-15400,Jennifer Braxton,Corporate,Central,2014-09-14,10,1791.605,156.05319999999998,Paid Search,49.39,Brand_Awareness_PPC,3.16
+JB-15925,Joni Blumstein,Consumer,East,2014-12-05,3,900.552,-286.9808,Display,46.85,Prospecting_Display,-6.13
+JB-16000,Joy Bell-,Consumer,Central,2016-01-10,7,644.1188,126.76490000000001,Organic,11.25,Blog_Traffic,11.27
+JB-16045,Julia Barnett,Home Office,South,2015-05-03,5,2518.115,201.51850000000002,Email,2.58,Re_Engagement,78.11
+JC-15340,Jasper Cacioppo,Consumer,West,2014-01-28,4,71.263,-0.35560000000000036,Social Media,23.65,Instagram_Retargeting,-0.02
+JC-15385,Jenna Caffey,Consumer,West,2017-07-08,1,1058.108,502.92440000000005,Display,39.5,Prospecting_Display,12.73
+JC-15775,John Castell,Consumer,Central,2014-09-14,9,2772.055,279.56919999999997,Social Media,44.85,Instagram_Retargeting,6.23
+JC-16105,Julie Creighton,Corporate,South,2014-11-18,5,858.576,201.5952,Email,7.57,Re_Engagement,26.63
+JD-15790,John Dryer,Consumer,Central,2015-04-02,5,2152.352,-266.55249999999995,Paid Search,40.85,Brand_Awareness_PPC,-6.53
+JD-15895,Jonathan Doherty,Corporate,East,2014-03-26,11,7610.8640000000005,1050.2667999999999,Paid Search,21.01,Product_Category_PPC,49.99
+JD-16015,Joy Daniels,Consumer,Central,2014-10-04,6,385.43,26.7605,Social Media,29.67,Instagram_Retargeting,0.9
+JD-16060,Julia Dunbar,Consumer,West,2014-09-24,3,695.442,111.11410000000001,Display,3.19,Prospecting_Display,34.83
+JD-16150,Justin Deggeller,Corporate,Central,2014-11-16,8,8828.0305,1619.5199,Social Media,33.43,Instagram_Retargeting,48.45
+JE-15475,Jeremy Ellison,Consumer,East,2015-03-16,6,1388.682,276.2197,Social Media,14.63,LinkedIn_B2B,18.88
+JE-15610,Jim Epp,Corporate,Central,2014-10-14,7,7754.976,1623.4019,Paid Search,14.49,Brand_Awareness_PPC,112.04
+JE-15715,Joe Elijah,Consumer,West,2014-08-25,10,8697.842999999999,1262.2926,Paid Search,26.21,Brand_Awareness_PPC,48.16
+JE-15745,Joel Eaton,Consumer,South,2014-06-22,13,6760.8150000000005,221.79670000000002,Social Media,29.24,Instagram_Retargeting,7.59
+JE-16165,Justin Ellison,Corporate,Central,2016-12-05,3,2697.248,789.6476,Email,5.53,Promotional_Blast,142.79
+JF-15190,Jamie Frazer,Consumer,West,2014-11-15,7,2279.5860000000002,575.1259,Social Media,12.85,Facebook_Prospecting,44.76
+JF-15295,Jason Fortune-,Consumer,West,2014-03-14,5,955.124,97.28899999999999,Direct,4.03,Word_of_Mouth,24.14
+JF-15355,Jay Fein,Consumer,Central,2015-10-23,6,1911.844,330.199,Paid Search,18.41,Competitor_Keywords,17.94
+JF-15415,Jennifer Ferguson,Consumer,East,2014-06-17,6,2371.448,635.6376,Direct,2.67,Word_of_Mouth,238.07
+JF-15490,Jeremy Farry,Consumer,West,2014-10-19,11,1082.918,-18.06730000000001,Social Media,15.9,Instagram_Retargeting,-1.14
+JF-15565,Jill Fjeld,Consumer,Central,2014-10-11,8,4198.332,1073.2088,Organic,10.75,Referral_Program,99.83
+JG-15115,Jack Garza,Consumer,West,2014-09-21,3,2358.676,684.1911,Paid Search,26.62,Brand_Awareness_PPC,25.7
+JG-15160,James Galang,Consumer,West,2014-05-30,11,6366.392,1415.6664,Paid Search,29.86,Competitor_Keywords,47.41
+JG-15310,Jason Gross,Corporate,East,2016-03-03,6,2240.58,3.7976000000000063,Paid Search,58.84,Product_Category_PPC,0.06
+JG-15805,John Grady,Corporate,East,2014-04-05,6,1507.018,206.1019,Paid Search,14.71,Competitor_Keywords,14.01
+JH-15430,Jennifer Halladay,Consumer,South,2014-02-24,4,309.281,-24.077100000000005,Organic,16.94,Referral_Program,-1.42
+JH-15820,John Huston,Consumer,East,2014-05-19,6,528.91,26.082199999999997,Social Media,1.0,LinkedIn_B2B,26.08
+JH-15910,Jonathan Howell,Consumer,West,2015-06-12,7,959.477,-13.554499999999996,Social Media,11.4,Facebook_Prospecting,-1.19
+JH-15985,Joseph Holt,Consumer,Central,2014-08-09,6,7954.9980000000005,-644.6982,Paid Search,30.44,Product_Category_PPC,-21.18
+JH-16180,Justin Hirsh,Consumer,West,2015-05-25,4,2256.3940000000002,-96.95300000000002,Organic,9.25,Blog_Traffic,-10.48
+JJ-15445,Jennifer Jackson,Consumer,West,2015-03-05,5,709.178,200.5558,Paid Search,34.33,Product_Category_PPC,5.84
+JJ-15760,Joel Jenkins,Home Office,South,2015-10-05,2,195.0,34.449200000000005,Organic,8.19,Referral_Program,4.21
+JK-15205,Jamie Kunitz,Consumer,West,2014-07-11,5,4427.142,1219.983,Paid Search,27.16,Brand_Awareness_PPC,44.92
+JK-15325,Jason Klamczynski,Corporate,Central,2014-11-21,3,383.812,55.32769999999999,Organic,9.55,Referral_Program,5.79
+JK-15370,Jay Kimmel,Consumer,West,2014-04-11,8,2709.632,330.2838,Paid Search,28.36,Product_Category_PPC,11.65
+JK-15625,Jim Karlsson,Consumer,West,2014-05-31,7,3760.028,750.9485,Paid Search,29.18,Competitor_Keywords,25.74
+JK-15640,Jim Kriz,Home Office,East,2014-09-19,9,4760.434,1172.5303,Paid Search,26.44,Brand_Awareness_PPC,44.35
+JK-15730,Joe Kamberova,Consumer,South,2014-11-18,10,4867.2,55.0483,Email,4.95,Welcome_Series,11.12
+JK-16090,Juliana Krohn,Consumer,Central,2015-04-21,3,3747.668,586.6625,Paid Search,25.25,Brand_Awareness_PPC,23.23
+JK-16120,Julie Kriz,Home Office,Central,2014-11-02,10,2932.484,122.6566,Organic,11.17,Referral_Program,10.98
+JL-15130,Jack Lebron,Consumer,Central,2014-07-18,6,1214.956,-207.79559999999998,Social Media,24.27,Facebook_Prospecting,-8.56
+JL-15175,James Lanier,Home Office,South,2014-12-31,5,1571.523,209.2817,Organic,6.71,Referral_Program,31.19
+JL-15235,Janet Lee,Consumer,Central,2014-05-25,5,2203.7,54.51740000000002,Display,23.94,Retargeting_Display,2.28
+JL-15505,Jeremy Lonsdale,Consumer,East,2014-11-14,6,3173.874,591.7163,Paid Search,7.96,Competitor_Keywords,74.34
+JL-15835,John Lee,Consumer,West,2014-04-18,11,9799.923,228.907,Display,64.47,Prospecting_Display,3.55
+JL-15850,John Lucas,Consumer,East,2014-07-22,6,2725.256,779.9046,Organic,3.79,Blog_Traffic,205.78
+JM-15250,Janet Martin,Consumer,South,2016-03-29,6,3159.1220000000003,19.82350000000004,Social Media,14.65,Instagram_Retargeting,1.35
+JM-15265,Janet Molinari,Corporate,East,2014-08-25,5,1804.146,502.6143,Email,8.27,Promotional_Blast,60.78
+JM-15535,Jessica Myrick,Consumer,East,2014-09-13,7,1733.443,356.5395,Social Media,9.28,Instagram_Retargeting,38.42
+JM-15580,Jill Matthias,Consumer,South,2016-04-14,5,303.948,113.1204,Social Media,6.22,LinkedIn_B2B,18.19
+JM-15655,Jim Mitchum,Corporate,East,2014-04-08,5,864.947,117.20400000000001,Direct,1.91,Sales_Outreach,61.36
+JM-15865,John Murray,Consumer,East,2014-11-19,7,7625.076000000001,1574.6163999999999,Organic,14.86,Referral_Program,105.96
+JM-16195,Justin MacKendrick,Consumer,West,2014-04-30,10,2833.9260000000004,754.1144,Organic,9.85,SEO_Content,76.56
+JO-15145,Jack O'Briant,Corporate,East,2014-01-06,9,3254.949,581.4045,Email,12.47,Re_Engagement,46.62
+JO-15280,Jas O'Carroll,Consumer,West,2014-03-31,6,1934.272,202.13619999999997,Paid Search,36.07,Product_Category_PPC,5.6
+JO-15550,Jesus Ocampo,Home Office,East,2015-03-19,5,1090.838,167.6709,Paid Search,12.54,Competitor_Keywords,13.37
+JP-15460,Jennifer Patt,Corporate,East,2014-08-24,7,1669.135,429.7465,Paid Search,29.21,Product_Category_PPC,14.71
+JP-15520,Jeremy Pistek,Consumer,West,2014-08-22,7,3635.594,757.1802,Paid Search,8.44,Competitor_Keywords,89.71
+JP-16135,Julie Prescott,Home Office,South,2014-09-23,9,1707.71,309.7116,Email,7.66,Welcome_Series,40.43
+JR-15670,Jim Radford,Consumer,East,2015-12-24,2,1156.658,-785.1645,Email,4.59,Welcome_Series,-171.06
+JR-15700,Jocasta Rupert,Consumer,South,2017-10-23,1,863.88,107.985,Paid Search,34.32,Product_Category_PPC,3.15
+JR-16210,Justin Ritter,Corporate,East,2015-09-18,5,2201.686,452.37300000000005,Paid Search,47.45,Brand_Awareness_PPC,9.53
+JS-15595,Jill Stevenson,Corporate,West,2014-03-03,4,1417.654,-175.54899999999998,Email,10.71,Re_Engagement,-16.39
+JS-15685,Jim Sink,Corporate,West,2016-06-14,4,1131.0639999999999,-54.8692,Paid Search,26.1,Brand_Awareness_PPC,-2.1
+JS-15880,John Stevenson,Consumer,West,2014-04-08,5,3868.02,564.9798000000001,Social Media,29.26,Instagram_Retargeting,19.31
+JS-15940,Joni Sundaresam,Home Office,Central,2014-05-03,5,469.169,-327.9336,Email,4.96,Promotional_Blast,-66.12
+JS-16030,Joy Smith,Consumer,Central,2014-02-27,6,2516.494,-311.25749999999994,Email,6.6,Promotional_Blast,-47.16
+JW-15220,Jane Waco,Corporate,West,2015-04-30,6,7721.714,2173.7093999999997,Paid Search,9.71,Competitor_Keywords,223.86
+JW-15955,Joni Wasserman,Consumer,West,2015-08-16,7,1244.086,-29.575899999999987,Social Media,14.81,LinkedIn_B2B,-2.0
+JW-16075,Julia West,Consumer,East,2015-03-21,4,1428.731,154.06369999999998,Organic,12.87,SEO_Content,11.97
+KA-16525,Kelly Andreada,Consumer,West,2014-03-11,7,1519.506,234.9194,Social Media,6.22,LinkedIn_B2B,37.77
+KB-16240,Karen Bern,Corporate,West,2014-03-31,7,3152.6150000000002,763.9076,Email,6.29,Promotional_Blast,121.45
+KB-16315,Karl Braun,Consumer,Central,2014-08-26,9,1569.464,49.71929999999999,Paid Search,30.15,Product_Category_PPC,1.65
+KB-16405,Katrina Bavinger,Home Office,West,2015-11-20,3,908.821,274.297,Paid Search,35.29,Brand_Awareness_PPC,7.77
+KB-16585,Ken Black,Corporate,Central,2014-04-04,12,2744.742,579.3551,Paid Search,9.77,Product_Category_PPC,59.3
+KB-16600,Ken Brennan,Corporate,Central,2014-12-30,7,983.922,293.55240000000003,Email,1.0,Welcome_Series,293.55
+KC-16255,Karen Carlisle,Corporate,West,2014-09-08,6,2120.954,846.1217,Organic,14.94,Referral_Program,56.63
+KC-16540,Kelly Collister,Consumer,West,2015-11-02,4,3908.262,709.4219,Paid Search,30.16,Brand_Awareness_PPC,23.52
+KC-16675,Kimberly Carter,Corporate,West,2014-12-13,4,1146.05,156.7797,Email,5.0,Welcome_Series,31.36
+KD-16270,Karen Daniels,Consumer,South,2014-11-11,5,8282.358,1107.6952000000003,Email,1.33,Promotional_Blast,832.85
+KD-16345,Katherine Ducich,Consumer,West,2014-09-02,6,1888.964,328.5942,Organic,8.0,SEO_Content,41.07
+KD-16495,Keith Dawkins,Corporate,East,2014-09-28,12,8181.256,3038.6254,Display,21.68,Prospecting_Display,140.16
+KD-16615,Ken Dana,Corporate,West,2015-09-13,5,2243.5099999999998,539.7219,Email,8.79,Promotional_Blast,61.4
+KE-16420,Katrina Edelman,Corporate,South,2014-04-03,8,1686.7312,397.87989999999996,Email,2.04,Promotional_Blast,195.04
+KF-16285,Karen Ferguson,Home Office,West,2014-09-26,7,10604.266,1660.1386,Email,5.32,Re_Engagement,312.06
+KH-16330,Katharine Harms,Corporate,South,2014-04-01,8,3312.864,454.7871,Direct,4.63,Word_of_Mouth,98.23
+KH-16360,Katherine Hughes,Consumer,East,2014-04-29,6,3100.612,528.2051,Email,7.86,Re_Engagement,67.2
+KH-16510,Keith Herrera,Consumer,West,2014-08-15,7,5952.859,656.1162,Email,4.64,Re_Engagement,141.4
+KH-16630,Ken Heidel,Corporate,Central,2014-11-01,9,3918.9660000000003,727.3786,Email,7.9,Welcome_Series,92.07
+KH-16690,Kristen Hastings,Corporate,West,2014-03-21,7,5990.799,1227.5091,Paid Search,37.82,Brand_Awareness_PPC,32.46
+KL-16555,Kelly Lampkin,Corporate,West,2014-06-15,8,5016.488,-182.78130000000002,Paid Search,29.61,Product_Category_PPC,-6.17
+KL-16645,Ken Lonsdale,Consumer,Central,2014-07-25,12,14175.229000000001,806.855,Email,7.34,Welcome_Series,109.93
+KM-16225,Kalyca Meade,Corporate,East,2015-07-06,6,2260.958,635.1057000000001,Direct,2.57,Sales_Outreach,247.12
+KM-16375,Katherine Murray,Home Office,South,2014-07-20,8,5620.186,973.7901999999999,Display,54.94,Retargeting_Display,17.72
+KM-16660,Khloe Miller,Consumer,South,2014-12-22,5,453.538,91.1391,Organic,9.6,Blog_Traffic,9.49
+KM-16720,Kunst Miller,Consumer,West,2014-03-30,8,4909.472,745.7685,Social Media,9.35,Instagram_Retargeting,79.76
+KN-16390,Katherine Nockton,Corporate,West,2014-12-02,9,2617.272,-151.1518,Paid Search,34.01,Competitor_Keywords,-4.44
+KN-16450,Kean Nguyen,Corporate,South,2014-04-12,5,2171.962,114.3083,Paid Search,15.49,Competitor_Keywords,7.38
+KN-16705,Kristina Nunn,Home Office,West,2014-03-02,8,2280.58,329.76250000000005,Organic,16.39,SEO_Content,20.12
+KS-16300,Karen Seio,Corporate,West,2015-01-13,3,88.472,0.11099999999999888,Paid Search,32.95,Product_Category_PPC,0.0
+KT-16465,Kean Takahito,Consumer,West,2014-09-08,7,3057.1,254.0032,Organic,1.0,SEO_Content,254.0
+KT-16480,Kean Thornton,Consumer,East,2014-03-10,10,4642.088400000001,194.0671,Social Media,29.81,Facebook_Prospecting,6.51
+KW-16435,Katrina Willman,Consumer,East,2015-08-24,5,4416.5199999999995,1756.135,Email,6.85,Welcome_Series,256.37
+KW-16570,Kelly Williams,Consumer,South,2014-09-30,4,449.096,107.92699999999999,Paid Search,36.56,Competitor_Keywords,2.95
+LA-16780,Laura Armstrong,Corporate,Central,2014-04-29,11,8673.222,2059.1199,Display,38.71,Prospecting_Display,53.19
+LB-16735,Larry Blacks,Consumer,Central,2016-07-25,3,50.188,18.6507,Direct,5.45,Sales_Outreach,3.42
+LB-16795,Laurel Beltran,Home Office,Central,2014-04-23,8,4985.676,-52.19099999999998,Social Media,15.85,LinkedIn_B2B,-3.29
+LC-16870,Lena Cacioppo,Consumer,West,2015-05-03,8,2580.7039999999997,-188.25110000000004,Social Media,30.28,Facebook_Prospecting,-6.22
+LC-16885,Lena Creighton,Consumer,West,2014-04-25,12,7663.126,1288.3469,Direct,3.63,Word_of_Mouth,354.92
+LC-16930,Linda Cazamias,Corporate,Central,2014-02-20,8,4492.946,288.26599999999996,Organic,1.59,Blog_Traffic,181.3
+LC-16960,Lindsay Castell,Home Office,South,2015-02-23,4,3246.626,299.48019999999997,Organic,1.21,Referral_Program,247.5
+LC-17050,Liz Carlisle,Consumer,West,2014-01-31,5,2095.064,86.77799999999999,Paid Search,24.4,Brand_Awareness_PPC,3.56
+LC-17140,Logan Currie,Consumer,Central,2014-09-09,9,2633.582,231.12520000000004,Social Media,14.76,Facebook_Prospecting,15.66
+LD-16855,Lela Donovan,Corporate,Central,2016-06-26,1,5.304,0.4641,Paid Search,4.8,Competitor_Keywords,0.1
+LD-17005,Lisa DeCherney,Consumer,West,2014-09-29,4,1961.934,557.1714,Email,2.38,Promotional_Blast,234.11
+LE-16810,Laurel Elliston,Consumer,West,2014-05-27,6,1469.45,161.76489999999998,Paid Search,26.01,Product_Category_PPC,6.22
+LF-17185,Luke Foster,Consumer,South,2014-07-26,7,3930.5089999999996,-3583.977,Organic,5.87,Blog_Traffic,-610.56
+LH-16750,Larry Hughes,Consumer,South,2014-09-21,3,287.426,12.627699999999999,Display,72.65,Prospecting_Display,0.17
+LH-16900,Lena Hernandez,Consumer,East,2014-08-19,9,2295.332,526.0727,Paid Search,20.03,Brand_Awareness_PPC,26.26
+LH-17020,Lisa Hazard,Consumer,East,2014-09-08,4,318.239,-242.73989999999998,Direct,5.33,Sales_Outreach,-45.54
+LH-17155,Logan Haushalter,Consumer,West,2014-12-12,9,1739.689,316.5202,Social Media,36.59,Instagram_Retargeting,8.65
+LL-16840,Lauren Leatherbury,Consumer,East,2014-04-29,6,2741.2039999999997,560.0078,Paid Search,21.79,Competitor_Keywords,25.7
+LM-17065,Liz MacKendrick,Consumer,East,2014-06-27,5,1346.774,-44.87799999999999,Paid Search,20.81,Brand_Awareness_PPC,-2.16
+LO-17170,Lori Olson,Corporate,West,2015-02-06,5,644.35,150.1712,Organic,7.52,SEO_Content,19.97
+LP-17080,Liz Pelletier,Consumer,West,2014-06-24,4,756.606,110.7813,Direct,2.66,Word_of_Mouth,41.65
+LP-17095,Liz Preis,Consumer,South,2016-06-06,7,3653.399,338.44539999999995,Display,32.4,Prospecting_Display,10.45
+LR-16915,Lena Radford,Consumer,West,2014-08-08,6,5142.892,535.4764,Organic,4.13,Blog_Traffic,129.66
+LR-17035,Lisa Ryan,Corporate,East,2014-09-07,5,1879.306,-382.8079,Organic,11.72,SEO_Content,-32.66
+LS-16945,Linda Southworth,Corporate,East,2015-04-25,6,2845.27,-318.77369999999996,Paid Search,23.48,Product_Category_PPC,-13.58
+LS-16975,Lindsay Shagiari,Home Office,West,2014-10-20,9,2988.674,262.63669999999996,Social Media,43.22,LinkedIn_B2B,6.08
+LS-17200,Luke Schmidt,Corporate,Central,2014-10-18,6,1010.2560000000001,244.197,Email,8.81,Promotional_Blast,27.72
+LS-17230,Lycoris Saunders,Consumer,East,2014-01-06,3,368.88000000000005,39.1952,Paid Search,23.65,Competitor_Keywords,1.66
+LS-17245,Lynn Smith,Consumer,Central,2014-10-16,6,1008.1360000000001,348.3584,Paid Search,35.01,Product_Category_PPC,9.95
+LT-16765,Larry Tron,Consumer,West,2014-09-01,3,329.876,59.036,Display,46.15,Retargeting_Display,1.28
+LT-17110,Liz Thompson,Consumer,West,2014-06-01,8,2936.252,320.973,Social Media,31.75,LinkedIn_B2B,10.11
+LW-16825,Laurel Workman,Corporate,South,2014-05-30,5,2238.061,32.5767,Paid Search,7.02,Competitor_Keywords,4.64
+LW-16990,Lindsay Williams,Corporate,West,2016-05-05,6,3230.308,662.8339000000001,Paid Search,12.91,Brand_Awareness_PPC,51.34
+LW-17125,Liz Willingham,Consumer,East,2014-09-11,3,1259.04,192.6312,Organic,5.8,SEO_Content,33.21
+LW-17215,Luke Weiss,Consumer,West,2014-09-12,7,5420.514,837.2411,Paid Search,27.9,Product_Category_PPC,30.01
+MA-17560,Matt Abelman,Home Office,Central,2014-08-08,11,4299.161,1240.2266,Organic,1.0,Blog_Traffic,1240.23
+MA-17995,Michelle Arnett,Home Office,East,2014-09-20,6,2453.284,280.7822,Email,3.39,Re_Engagement,82.83
+MB-17305,Maria Bertelson,Consumer,East,2014-08-08,10,1548.702,212.425,Organic,16.62,Referral_Program,12.78
+MB-18085,Mick Brown,Consumer,East,2014-01-05,7,1428.231,117.8057,Social Media,11.81,LinkedIn_B2B,9.98
+MC-17275,Marc Crier,Consumer,South,2014-09-08,8,2725.982,461.0014,Paid Search,30.88,Brand_Awareness_PPC,14.93
+MC-17425,Mark Cousins,Corporate,South,2014-05-30,5,4432.138,1802.3903,Email,6.92,Welcome_Series,260.46
+MC-17575,Matt Collins,Consumer,East,2014-12-02,8,1303.893,210.7493,Organic,12.03,Blog_Traffic,17.52
+MC-17590,Matt Collister,Corporate,East,2014-05-20,6,2426.067,288.98409999999996,Direct,4.43,Sales_Outreach,65.23
+MC-17605,Matt Connell,Corporate,Central,2014-03-19,8,2258.192,195.4486,Organic,15.04,Referral_Program,13.0
+MC-17635,Matthew Clasen,Corporate,Central,2014-11-28,4,795.154,-247.94350000000003,Organic,17.66,Referral_Program,-14.04
+MC-17845,Michael Chen,Consumer,South,2014-07-05,7,3805.714,698.4174,Paid Search,23.56,Product_Category_PPC,29.64
+MC-18100,Mick Crebagga,Consumer,Central,2014-06-18,10,2218.98,-64.1668,Organic,5.83,Blog_Traffic,-11.01
+MC-18130,Mike Caudle,Corporate,South,2014-09-19,5,1581.9979999999998,121.7565,Paid Search,33.02,Brand_Awareness_PPC,3.69
+MD-17350,Maribeth Dona,Consumer,South,2014-11-05,7,3766.382,-241.94999999999996,Social Media,25.6,Facebook_Prospecting,-9.45
+MD-17860,Michael Dominguez,Corporate,Central,2014-12-02,5,1204.91,-4.040300000000002,Paid Search,37.81,Product_Category_PPC,-0.11
+ME-17320,Maria Etezadi,Home Office,South,2014-01-06,10,10663.728000000001,1859.4695,Direct,1.0,Word_of_Mouth,1859.47
+ME-17725,Max Engle,Consumer,West,2014-07-12,8,1908.4532,77.81280000000001,Email,8.26,Re_Engagement,9.42
+ME-18010,Michelle Ellison,Corporate,West,2014-07-21,4,1256.944,107.3604,Email,1.95,Re_Engagement,55.06
+MF-17665,Maureen Fritzler,Corporate,East,2014-12-30,5,937.039,-341.52650000000006,Organic,11.33,Blog_Traffic,-30.14
+MF-18250,Monica Federle,Corporate,West,2014-09-15,5,1758.3,456.86080000000004,Email,4.8,Welcome_Series,95.18
+MG-17650,Matthew Grinstein,Home Office,East,2014-08-09,7,3785.276,341.898,Direct,5.42,Word_of_Mouth,63.08
+MG-17680,Maureen Gastineau,Home Office,East,2014-10-22,4,2350.188,25.888599999999972,Display,16.38,Prospecting_Display,1.58
+MG-17695,Maureen Gnade,Consumer,East,2014-12-26,3,1342.282,-398.79319999999996,Paid Search,30.11,Product_Category_PPC,-13.24
+MG-17875,Michael Grace,Home Office,East,2014-02-23,5,1242.8329999999999,-470.7684,Paid Search,32.9,Product_Category_PPC,-14.31
+MG-17890,Michael Granlund,Home Office,East,2014-12-29,9,776.384,171.7372,Social Media,18.73,Facebook_Prospecting,9.17
+MG-18145,Mike Gockenbach,Consumer,East,2014-03-29,4,3061.543,-93.603,Social Media,23.57,LinkedIn_B2B,-3.97
+MG-18205,Mitch Gastineau,Corporate,South,2017-04-10,1,16.739,-1.2453,Social Media,17.68,Facebook_Prospecting,-0.07
+MH-17290,Marc Harrigan,Home Office,West,2014-04-26,6,2394.025,28.761200000000038,Organic,10.64,SEO_Content,2.7
+MH-17440,Mark Haberlin,Corporate,East,2014-02-04,4,400.016,61.428599999999996,Direct,3.73,Word_of_Mouth,16.47
+MH-17455,Mark Hamilton,Consumer,South,2014-07-11,8,2456.1820000000002,484.77330000000006,Paid Search,21.69,Competitor_Keywords,22.35
+MH-17620,Matt Hagelstein,Corporate,West,2015-12-05,4,1252.8,122.3612,Paid Search,26.43,Competitor_Keywords,4.63
+MH-17785,Maya Herman,Corporate,East,2014-05-27,7,2203.7780000000002,238.5614,Organic,1.0,SEO_Content,238.56
+MH-18025,Michelle Huthwaite,Consumer,West,2014-07-08,5,2984.948,476.9032,Email,1.0,Re_Engagement,476.9
+MH-18115,Mick Hernandez,Home Office,East,2016-08-23,9,5503.093,170.9746,Direct,2.19,Word_of_Mouth,78.07
+MJ-17740,Max Jones,Consumer,West,2015-06-09,7,6320.746,1054.5529000000001,Social Media,10.93,LinkedIn_B2B,96.48
+MK-17905,Michael Kennedy,Corporate,East,2014-11-18,8,2302.368,-405.3559,Display,35.33,Prospecting_Display,-11.47
+MK-18160,Mike Kennedy,Consumer,South,2014-12-19,4,1031.602,227.83380000000002,Email,9.37,Welcome_Series,24.32
+ML-17395,Marina Lichtenstein,Corporate,West,2014-02-14,9,2722.843,684.9162,Paid Search,43.73,Product_Category_PPC,15.66
+ML-17410,Maris LaWare,Consumer,East,2014-11-14,6,2921.5,-76.17550000000003,Display,34.66,Prospecting_Display,-2.2
+ML-17755,Max Ludwig,Home Office,South,2016-08-04,7,2071.9139999999998,409.51120000000003,Display,20.8,Retargeting_Display,19.69
+ML-18040,Michelle Lonsdale,Corporate,West,2017-03-26,3,742.082,138.71620000000001,Email,2.32,Welcome_Series,59.79
+ML-18265,Muhammed Lee,Consumer,West,2015-05-31,2,162.232,42.6648,Paid Search,47.92,Competitor_Keywords,0.89
+MM-17260,Magdelene Morse,Consumer,East,2014-05-28,4,1314.023,178.402,Direct,4.8,Word_of_Mouth,37.17
+MM-17920,Michael Moore,Consumer,West,2014-01-13,11,3794.0800000000004,82.12499999999997,Paid Search,25.52,Product_Category_PPC,3.22
+MM-18055,Michelle Moray,Consumer,West,2014-04-11,8,2749.881,-520.3443,Paid Search,28.89,Product_Category_PPC,-18.01
+MM-18280,Muhammed MacIntyre,Corporate,Central,2014-01-20,9,775.414,58.8916,Email,5.31,Re_Engagement,11.09
+MN-17935,Michael Nguyen,Consumer,Central,2014-02-16,6,2477.946,290.8227,Organic,12.53,Referral_Program,23.21
+MO-17500,Mary O'Rourke,Consumer,East,2014-11-28,4,922.487,59.357699999999994,Paid Search,27.65,Competitor_Keywords,2.15
+MO-17800,Meg O'Connel,Home Office,East,2015-09-17,8,1687.0269999999998,169.34369999999998,Organic,13.54,Blog_Traffic,12.51
+MO-17950,Michael Oakman,Consumer,Central,2015-04-02,2,154.288,-82.0074,Organic,13.61,Blog_Traffic,-6.03
+MP-17470,Mark Packer,Home Office,East,2014-03-30,7,3206.132,600.2873,Organic,5.28,Blog_Traffic,113.69
+MP-17965,Michael Paige,Corporate,East,2015-04-18,9,3983.6420000000003,638.1563,Paid Search,31.88,Brand_Awareness_PPC,20.02
+MP-18175,Mike Pelletier,Home Office,West,2014-03-28,9,5087.92,226.4529,Display,56.74,Prospecting_Display,3.99
+MR-17545,Mathew Reese,Home Office,East,2014-09-03,4,639.178,162.9363,Email,7.47,Promotional_Blast,21.81
+MS-17365,Maribeth Schnelling,Consumer,Central,2014-09-09,10,7443.6900000000005,844.9354999999998,Paid Search,32.5,Product_Category_PPC,26.0
+MS-17530,MaryBeth Skach,Consumer,West,2014-11-04,4,475.65599999999995,84.0268,Social Media,15.18,LinkedIn_B2B,5.54
+MS-17710,Maurice Satty,Consumer,West,2014-03-24,6,1613.402,247.4348,Paid Search,19.11,Competitor_Keywords,12.95
+MS-17770,Maxwell Schwartz,Consumer,East,2014-07-04,9,3144.678,280.85839999999996,Social Media,21.87,LinkedIn_B2B,12.84
+MS-17830,Melanie Seite,Consumer,Central,2014-01-09,4,370.348,19.431199999999997,Paid Search,20.38,Competitor_Keywords,0.95
+MS-17980,Michael Stewart,Corporate,Central,2014-06-30,6,855.116,55.226,Email,8.99,Re_Engagement,6.14
+MT-17815,Meg Tillman,Consumer,West,2015-11-06,6,2890.139,509.0068,Paid Search,25.92,Brand_Awareness_PPC,19.64
+MT-18070,Michelle Tran,Home Office,West,2014-09-25,4,1319.4498,-23.676300000000005,Email,3.94,Welcome_Series,-6.01
+MV-17485,Mark Van Huff,Consumer,South,2014-01-20,9,1560.05,189.0258,Email,9.07,Promotional_Blast,20.84
+MV-18190,Mike Vittorini,Consumer,East,2014-01-30,7,1734.574,273.8582,Organic,4.53,Blog_Traffic,60.45
+MW-18220,Mitch Webber,Consumer,East,2014-08-25,7,5341.900000000001,1238.422,Organic,9.88,Blog_Traffic,125.35
+MW-18235,Mitch Willingham,Corporate,South,2014-05-21,2,5253.876,1665.516,Paid Search,21.15,Product_Category_PPC,78.75
+MY-17380,Maribeth Yedwab,Corporate,West,2015-10-26,7,2254.285,319.1211,Paid Search,56.82,Competitor_Keywords,5.62
+MY-18295,Muhammed Yedwab,Corporate,Central,2014-04-28,11,4152.696,-371.7111,Organic,9.89,SEO_Content,-37.58
+MZ-17335,Maria Zettner,Home Office,West,2015-11-08,4,593.606,85.01910000000001,Email,3.37,Re_Engagement,25.23
+MZ-17515,Mary Zewe,Corporate,West,2014-04-04,6,2564.906,787.7503,Email,6.11,Promotional_Blast,128.93
+NB-18580,Nicole Brennan,Corporate,East,2014-09-26,2,273.87199999999996,24.788800000000002,Paid Search,25.85,Product_Category_PPC,0.96
+NB-18655,Nona Balk,Corporate,Central,2014-12-05,9,1972.599,117.6429,Paid Search,19.22,Product_Category_PPC,6.12
+NC-18340,Nat Carroll,Consumer,Central,2014-03-30,5,2461.404,580.3075,Social Media,30.9,Instagram_Retargeting,18.78
+NC-18415,Nathan Cano,Consumer,South,2014-05-03,6,2218.9900000000002,-2204.8072,Paid Search,35.48,Product_Category_PPC,-62.14
+NC-18535,Nick Crebassa,Corporate,Central,2014-07-23,7,8241.739,1314.758,Paid Search,31.31,Brand_Awareness_PPC,41.99
+NC-18625,Noah Childs,Corporate,West,2014-10-29,5,1821.742,-359.02099999999996,Organic,6.01,SEO_Content,-59.74
+ND-18370,Natalie DeCherney,Consumer,South,2014-01-13,9,4326.139,353.64549999999997,Paid Search,49.74,Product_Category_PPC,7.11
+ND-18460,Neil Ducich,Corporate,South,2014-02-06,6,2893.455,443.33680000000004,Direct,3.72,Sales_Outreach,119.18
+NF-18385,Natalie Fritzler,Consumer,South,2014-02-11,7,8322.826,-1695.9714,Organic,7.1,Referral_Program,-238.87
+NF-18475,Neil Französisch,Home Office,Central,2014-03-14,4,377.16200000000003,85.92779999999999,Organic,15.45,SEO_Content,5.56
+NF-18595,Nicole Fjeld,Home Office,East,2014-04-19,7,2031.472,388.2131,Paid Search,29.37,Product_Category_PPC,13.22
+NG-18355,Nat Gilpin,Corporate,East,2014-11-24,5,1869.58,313.63349999999997,Display,52.25,Prospecting_Display,6.0
+NG-18430,Nathan Gelder,Consumer,East,2014-11-24,5,1395.9379999999999,217.0893,Social Media,25.61,LinkedIn_B2B,8.48
+NH-18610,Nicole Hansen,Corporate,Central,2014-03-02,7,2673.29,760.1666,Organic,20.91,SEO_Content,36.35
+NK-18490,Neil Knudson,Home Office,West,2015-05-28,7,572.048,121.2177,Paid Search,15.62,Product_Category_PPC,7.76
+NL-18310,Nancy Lomonaco,Home Office,West,2014-10-31,4,1418.0900000000001,343.6381,Organic,7.35,Referral_Program,46.75
+NM-18445,Nathan Mautz,Home Office,East,2014-02-08,7,6459.344,2751.6848999999997,Organic,24.83,Blog_Traffic,110.82
+NM-18520,Neoma Murray,Consumer,West,2015-09-08,10,2161.979,788.9525000000001,Organic,9.52,Blog_Traffic,82.87
+NP-18325,Naresj Patel,Consumer,South,2014-05-13,6,5529.62,1208.8890000000001,Paid Search,14.47,Brand_Awareness_PPC,83.54
+NP-18670,Nora Paige,Consumer,Central,2015-02-27,5,3908.402,514.6002,Email,7.69,Welcome_Series,66.92
+NP-18685,Nora Pelletier,Home Office,East,2014-03-07,6,1228.698,514.5017,Paid Search,41.09,Brand_Awareness_PPC,12.52
+NP-18700,Nora Preis,Consumer,West,2014-09-05,7,7903.1825,631.2282,Organic,9.45,Blog_Traffic,66.8
+NR-18550,Nick Radford,Consumer,Central,2014-06-07,5,2367.277,-25.148799999999966,Organic,1.0,SEO_Content,-25.15
+NS-18505,Neola Schneider,Consumer,Central,2016-11-24,4,2575.863,-12.303999999999997,Social Media,13.89,Facebook_Prospecting,-0.89
+NS-18640,Noel Staavos,Corporate,Central,2014-06-25,13,2964.823,-234.7714,Direct,1.0,Sales_Outreach,-234.77
+NW-18400,Natalie Webber,Consumer,West,2014-06-21,7,7234.014,1023.123,Organic,20.01,SEO_Content,51.13
+NZ-18565,Nick Zandusky,Home Office,East,2014-08-02,9,2488.31,402.4236,Email,1.1,Promotional_Blast,365.84
+ON-18715,Odella Nelson,Corporate,Central,2014-09-13,9,1567.52,-5.88900000000001,Email,4.28,Re_Engagement,-1.38
+OT-18730,Olvera Toch,Consumer,West,2015-04-20,5,3818.624,-925.1203,Display,45.99,Retargeting_Display,-20.12
+PA-19060,Pete Armstrong,Home Office,Central,2014-05-17,6,729.408,225.8588,Organic,3.73,Referral_Program,60.55
+PB-18805,Patrick Bzostek,Home Office,West,2015-11-20,3,740.356,229.2257,Organic,12.01,SEO_Content,19.09
+PB-19105,Peter Bühler,Consumer,Central,2014-11-15,4,688.324,218.15970000000002,Display,27.72,Retargeting_Display,7.87
+PB-19150,Philip Brown,Consumer,West,2014-07-14,8,1456.95,280.6606,Paid Search,31.89,Competitor_Keywords,8.8
+PB-19210,Phillip Breyer,Corporate,Central,2014-11-23,2,132.738,21.897000000000002,Email,5.13,Promotional_Blast,4.27
+PC-18745,Pamela Coakley,Corporate,West,2014-12-31,4,1832.064,272.685,Paid Search,26.12,Brand_Awareness_PPC,10.44
+PC-19000,Pauline Chand,Home Office,West,2014-04-08,2,1061.488,-184.3364,Email,9.19,Re_Engagement,-20.06
+PF-19120,Peter Fuller,Consumer,West,2014-05-05,4,9062.864,-614.2943000000001,Social Media,11.6,Instagram_Retargeting,-52.96
+PF-19165,Philip Fox,Consumer,Central,2014-09-20,6,2770.0,196.87389999999996,Social Media,24.87,Facebook_Prospecting,7.92
+PF-19225,Phillip Flathmann,Consumer,West,2016-06-26,5,2206.1279999999997,591.3118000000001,Direct,4.61,Word_of_Mouth,128.27
+PG-18820,Patrick Gardner,Consumer,West,2014-05-09,13,3086.907,137.46130000000002,Social Media,10.79,Instagram_Retargeting,12.74
+PG-18895,Paul Gonzalez,Consumer,Central,2014-05-11,9,1987.164,334.5163,Organic,2.22,Blog_Traffic,150.68
+PH-18790,Patricia Hirasaki,Home Office,South,2017-10-21,1,729.648,47.8878,Paid Search,24.73,Brand_Awareness_PPC,1.94
+PJ-18835,Patrick Jones,Corporate,South,2014-05-28,8,1220.09,442.1355,Paid Search,2.86,Product_Category_PPC,154.59
+PJ-19015,Pauline Johnson,Consumer,West,2014-04-07,7,1824.2340000000002,682.9979000000001,Organic,11.27,Referral_Program,60.6
+PK-18910,Paul Knutson,Home Office,East,2014-04-04,2,1441.152,-798.705,Social Media,27.84,LinkedIn_B2B,-28.69
+PK-19075,Pete Kriz,Consumer,Central,2014-11-11,12,8646.934,2038.2676000000001,Organic,3.04,SEO_Content,670.48
+PL-18925,Paul Lucas,Home Office,Central,2014-11-01,5,239.481,-0.7527000000000026,Paid Search,38.16,Competitor_Keywords,-0.02
+PM-18940,Paul MacIntyre,Consumer,Central,2014-05-04,3,1405.402,157.8768,Social Media,33.0,Facebook_Prospecting,4.78
+PM-19135,Peter McVee,Home Office,Central,2015-12-19,4,4115.662,526.7537,Organic,11.81,Blog_Traffic,44.6
+PN-18775,Parhena Norris,Home Office,East,2015-08-07,8,1467.152,192.0396,Organic,16.49,Referral_Program,11.65
+PO-18850,Patrick O'Brill,Consumer,East,2014-11-02,11,7473.8282,38.47569999999996,Paid Search,24.08,Product_Category_PPC,1.6
+PO-18865,Patrick O'Donnell,Consumer,Central,2014-03-23,7,2493.214,437.8533,Paid Search,21.39,Competitor_Keywords,20.47
+PO-19180,Philisse Overcash,Home Office,Central,2015-08-11,9,4893.043,1155.4331,Email,5.61,Promotional_Blast,205.96
+PO-19195,Phillina Ober,Home Office,Central,2014-01-04,5,1056.858,-49.70089999999999,Display,22.48,Retargeting_Display,-2.21
+PP-18955,Paul Prost,Home Office,South,2014-08-26,10,7252.608,1495.0854,Social Media,16.7,LinkedIn_B2B,89.53
+PR-18880,Patrick Ryan,Consumer,West,2014-09-05,5,1840.178,247.6226,Paid Search,28.11,Brand_Awareness_PPC,8.81
+PS-18760,Pamela Stobb,Consumer,West,2014-06-15,6,2181.479,-134.441,Direct,3.28,Word_of_Mouth,-40.99
+PS-18970,Paul Stevenson,Home Office,Central,2014-04-15,8,1278.639,198.5099,Organic,12.26,SEO_Content,16.19
+PS-19045,Penelope Sewall,Home Office,South,2014-12-20,7,6843.634,1742.7296999999999,Social Media,3.09,LinkedIn_B2B,563.99
+PT-19090,Pete Takahito,Consumer,Central,2014-09-12,4,160.572,-20.0508,Email,14.81,Welcome_Series,-1.35
+PV-18985,Paul Van Hugh,Home Office,West,2014-07-12,5,2876.046,434.52840000000003,Paid Search,16.74,Brand_Awareness_PPC,25.96
+PW-19030,Pauline Webber,Corporate,South,2014-05-16,10,3454.916,803.8169,Organic,13.22,SEO_Content,60.8
+PW-19240,Pierre Wener,Consumer,West,2014-11-18,7,3922.4150000000004,1290.354,Direct,3.55,Word_of_Mouth,363.48
+QJ-19255,Quincy Jones,Corporate,Central,2014-03-17,9,6108.338,1203.6768,Email,4.05,Welcome_Series,297.2
+RA-19285,Ralph Arnett,Consumer,East,2014-12-13,9,2617.906,546.0882,Organic,12.74,SEO_Content,42.86
+RA-19885,Ruben Ausman,Corporate,West,2014-04-08,7,3832.314,1292.8656,Direct,1.17,Sales_Outreach,1105.01
+RA-19915,Russell Applegate,Consumer,Central,2014-06-30,9,4793.543,304.8673,Display,37.54,Retargeting_Display,8.12
+RA-19945,Ryan Akin,Consumer,West,2014-08-29,5,1686.9225,-445.695,Email,12.01,Welcome_Series,-37.11
+RB-19330,Randy Bradley,Consumer,East,2014-11-17,2,1008.1959999999999,-164.40619999999998,Organic,7.76,Blog_Traffic,-21.19
+RB-19360,Raymond Buch,Consumer,East,2016-04-01,6,15117.339,6976.0959,Display,39.01,Prospecting_Display,178.83
+RB-19435,Richard Bierner,Consumer,Central,2014-03-11,8,2663.0860000000002,477.23990000000003,Email,2.77,Welcome_Series,172.29
+RB-19465,Rick Bensley,Home Office,Central,2014-03-14,12,4715.466,640.5466,Organic,13.34,SEO_Content,48.02
+RB-19570,Rob Beeghly,Consumer,Central,2016-04-28,5,528.546,76.8879,Social Media,15.06,LinkedIn_B2B,5.11
+RB-19645,Robert Barroso,Corporate,West,2014-08-23,5,221.084,72.679,Email,6.89,Re_Engagement,10.55
+RB-19705,Roger Barcio,Home Office,West,2015-08-22,4,2067.45,243.07549999999998,Direct,5.01,Sales_Outreach,48.52
+RB-19795,Ross Baird,Home Office,South,2014-06-03,8,5633.316000000001,-461.73319999999995,Organic,8.74,Blog_Traffic,-52.83
+RC-19825,Roy Collins,Consumer,Central,2014-12-05,6,966.409,63.991400000000006,Social Media,27.08,Instagram_Retargeting,2.36
+RC-19960,Ryan Crowe,Consumer,East,2014-08-25,6,885.752,10.563300000000002,Social Media,25.2,LinkedIn_B2B,0.42
+RD-19480,Rick Duston,Consumer,West,2014-06-08,8,4272.93,480.594,Social Media,31.42,LinkedIn_B2B,15.3
+RD-19585,Rob Dowd,Consumer,South,2014-04-02,10,2912.8940000000002,734.5158,Organic,12.85,SEO_Content,57.16
+RD-19660,Robert Dilbeck,Home Office,Central,2015-04-12,5,2786.632,835.772,Organic,16.45,Referral_Program,50.81
+RD-19720,Roger Demir,Consumer,South,2014-07-20,10,1419.737,207.3304,Paid Search,24.86,Competitor_Keywords,8.34
+RD-19810,Ross DeVincentis,Home Office,West,2014-10-27,8,1137.616,318.4625,Email,2.17,Welcome_Series,146.76
+RD-19900,Ruben Dartt,Consumer,West,2014-04-05,9,3133.924,455.5292,Email,1.07,Promotional_Blast,425.73
+RD-19930,Russell D'Ascenzo,Consumer,Central,2014-10-03,4,970.9420000000001,35.05740000000001,Social Media,8.03,Facebook_Prospecting,4.37
+RE-19405,Ricardo Emerson,Consumer,East,2014-12-29,1,48.36,6.045,Social Media,19.27,LinkedIn_B2B,0.31
+RE-19450,Richard Eichhorn,Consumer,Central,2014-06-03,5,876.696,209.2294,Paid Search,30.04,Competitor_Keywords,6.97
+RF-19345,Randy Ferguson,Corporate,East,2014-05-20,8,3309.15,633.7072000000001,Email,3.9,Welcome_Series,162.49
+RF-19735,Roland Fjeld,Consumer,Central,2014-08-06,7,2341.2960000000003,711.6168,Email,1.0,Welcome_Series,711.62
+RF-19840,Roy Französisch,Consumer,East,2014-11-12,8,945.222,280.0261,Organic,6.59,Referral_Program,42.49
+RH-19495,Rick Hansen,Consumer,Central,2014-08-23,5,3621.3759999999997,563.7877,Social Media,17.91,LinkedIn_B2B,31.48
+RH-19510,Rick Huthwaite,Home Office,East,2014-11-16,6,6979.18,1289.4535,Social Media,21.82,LinkedIn_B2B,59.1
+RH-19555,Ritsa Hightower,Consumer,South,2015-12-04,2,740.382,0.30570000000000164,Social Media,35.01,Instagram_Retargeting,0.01
+RH-19600,Rob Haberlin,Consumer,South,2015-07-02,3,2085.7400000000002,172.6261,Social Media,5.58,Facebook_Prospecting,30.94
+RK-19300,Ralph Kennedy,Consumer,East,2015-07-20,3,1460.192,269.688,Email,8.04,Re_Engagement,33.54
+RL-19615,Rob Lucas,Consumer,South,2014-12-05,8,6234.91,488.14840000000004,Organic,12.88,Blog_Traffic,37.9
+RM-19375,Raymond Messe,Consumer,Central,2014-05-11,6,1453.474,392.1499,Display,34.21,Prospecting_Display,11.46
+RM-19675,Robert Marley,Home Office,South,2014-11-14,5,5979.0960000000005,1902.5438000000001,Display,43.88,Prospecting_Display,43.36
+RM-19750,Roland Murray,Consumer,East,2017-03-06,1,98.35,28.6879,Paid Search,25.73,Competitor_Keywords,1.11
+RO-19780,Rose O'Brian,Consumer,South,2015-05-12,7,3815.478,-1262.5716000000002,Paid Search,34.64,Product_Category_PPC,-36.45
+RP-19270,Rachel Payne,Corporate,West,2014-10-19,4,954.6452,59.538399999999996,Email,3.39,Re_Engagement,17.56
+RP-19390,Resi Pölking,Consumer,East,2014-05-24,12,5153.084,465.25030000000015,Social Media,13.14,Facebook_Prospecting,35.41
+RP-19855,Roy Phan,Corporate,Central,2014-04-05,8,2170.716,594.5868,Display,9.32,Retargeting_Display,63.8
+RR-19315,Ralph Ritter,Consumer,West,2016-11-14,2,615.932,-73.835,Email,7.19,Re_Engagement,-10.27
+RR-19525,Rick Reed,Corporate,East,2014-09-09,6,3302.2619999999997,721.6826,Organic,6.98,Blog_Traffic,103.39
+RS-19420,Ricardo Sperren,Corporate,West,2014-08-05,5,3221.29,633.4513999999999,Paid Search,8.96,Competitor_Keywords,70.7
+RS-19765,Roland Schwarz,Corporate,East,2014-04-07,8,4159.7699999999995,1206.3851,Paid Search,16.37,Competitor_Keywords,73.69
+RS-19870,Roy Skaria,Home Office,Central,2016-06-07,2,22.328,9.5838,Email,7.65,Welcome_Series,1.25
+RW-19540,Rick Wilson,Corporate,West,2015-02-03,7,7397.401,1586.6273,Organic,10.8,Blog_Traffic,146.91
+RW-19630,Rob Williams,Corporate,Central,2014-06-28,9,3279.746,698.8325,Paid Search,16.75,Brand_Awareness_PPC,41.72
+RW-19690,Robert Waldorf,Consumer,South,2016-05-30,5,3495.646,707.5503,Direct,5.79,Word_of_Mouth,122.2
+SA-20830,Sue Ann Reed,Consumer,Central,2014-02-22,10,4767.3415,610.1496000000001,Social Media,21.32,Instagram_Retargeting,28.62
+SB-20170,Sarah Bern,Consumer,East,2014-06-06,3,1348.02,157.6658,Paid Search,33.66,Competitor_Keywords,4.68
+SB-20185,Sarah Brown,Consumer,East,2014-09-20,6,6410.996,885.4623999999999,Email,6.42,Re_Engagement,137.92
+SB-20290,Sean Braxton,Corporate,Central,2014-05-09,7,8057.891,-2082.7451,Display,33.74,Prospecting_Display,-61.73
+SC-20020,Sam Craven,Consumer,Central,2014-03-03,5,3362.9636,-317.0508,Paid Search,32.81,Product_Category_PPC,-9.66
+SC-20050,Sample Company A,Home Office,East,2014-03-18,9,4624.572,1011.7443,Email,9.45,Promotional_Blast,107.06
+SC-20095,Sanjit Chand,Consumer,West,2014-02-12,9,14142.333999999999,5757.411899999999,Display,33.49,Retargeting_Display,171.91
+SC-20230,Scot Coram,Corporate,Central,2016-06-06,4,4371.9580000000005,440.14099999999996,Email,8.24,Welcome_Series,53.42
+SC-20260,Scott Cohen,Corporate,West,2014-04-06,8,3729.7929999999997,671.0033999999999,Paid Search,19.59,Brand_Awareness_PPC,34.25
+SC-20305,Sean Christensen,Consumer,Central,2014-12-16,7,3979.065,229.1617,Organic,19.1,SEO_Content,12.0
+SC-20380,Shahid Collister,Consumer,West,2014-03-01,9,5992.536,236.66149999999996,Paid Search,18.06,Brand_Awareness_PPC,13.1
+SC-20440,Shaun Chance,Corporate,West,2015-08-17,7,1874.998,379.5611,Email,12.67,Re_Engagement,29.96
+SC-20575,Sonia Cooley,Consumer,Central,2014-06-16,5,902.7280000000001,100.2253,Paid Search,13.15,Competitor_Keywords,7.62
+SC-20680,Steve Carroll,Home Office,South,2014-11-21,6,1254.64,370.1578,Organic,8.23,Referral_Program,44.98
+SC-20695,Steve Chapman,Corporate,South,2014-12-16,10,2576.408,611.8291,Paid Search,33.44,Brand_Awareness_PPC,18.3
+SC-20725,Steven Cartwright,Consumer,East,2014-06-03,11,5226.21,1276.6513,Paid Search,42.7,Brand_Awareness_PPC,29.9
+SC-20770,Stewart Carmichael,Corporate,South,2015-06-20,7,4492.657,-671.1874,Email,10.87,Welcome_Series,-61.75
+SC-20800,Stuart Calhoun,Consumer,Central,2015-12-11,4,279.25600000000003,51.8252,Paid Search,45.51,Brand_Awareness_PPC,1.14
+SC-20845,Sung Chung,Consumer,Central,2016-11-11,2,280.632,31.1757,Social Media,6.83,Instagram_Retargeting,4.56
+SD-20485,Shirley Daniels,Home Office,East,2014-01-26,9,6121.114,1985.1671999999999,Direct,3.83,Word_of_Mouth,518.32
+SE-20110,Sanjit Engle,Consumer,East,2014-04-11,11,12209.438000000002,2650.6769,Social Media,15.05,Instagram_Retargeting,176.12
+SF-20065,Sandra Flanagan,Consumer,East,2014-09-10,7,763.5459999999999,228.1623,Social Media,30.79,Facebook_Prospecting,7.41
+SF-20200,Sarah Foster,Consumer,West,2014-12-23,9,3422.7859999999996,286.9046,Direct,5.21,Sales_Outreach,55.07
+SF-20965,Sylvia Foulston,Corporate,Central,2014-10-21,9,3336.535,539.9352,Paid Search,31.63,Product_Category_PPC,17.07
+SG-20080,Sandra Glassco,Consumer,Central,2015-10-31,3,3406.5809999999997,570.438,Social Media,17.19,Facebook_Prospecting,33.18
+SG-20470,Sheri Gordon,Consumer,East,2014-07-26,8,1884.798,-119.0105,Paid Search,14.79,Competitor_Keywords,-8.05
+SG-20605,Speros Goranitis,Consumer,East,2014-01-23,6,3124.832,463.269,Social Media,15.6,LinkedIn_B2B,29.7
+SG-20890,Susan Gilcrest,Corporate,Central,2014-03-30,3,47.946,-3.7073,Paid Search,18.89,Brand_Awareness_PPC,-0.2
+SH-19975,Sally Hughsby,Corporate,West,2014-12-10,13,3406.8395,558.4739999999999,Display,38.5,Retargeting_Display,14.51
+SH-20395,Shahid Hopkins,Consumer,South,2014-11-02,10,2180.718,-144.5229,Paid Search,40.37,Brand_Awareness_PPC,-3.58
+SH-20635,Stefanie Holloman,Corporate,South,2014-12-16,2,2096.392,260.6258,Email,6.33,Promotional_Blast,41.17
+SJ-20125,Sanjit Jacobs,Home Office,East,2015-09-22,12,3949.656,144.1189,Email,2.48,Promotional_Blast,58.11
+SJ-20215,Sarah Jordon,Consumer,Central,2015-02-09,6,1341.036,-23.5137,Email,2.3,Re_Engagement,-10.22
+SJ-20500,Shirley Jackson,Consumer,Central,2014-08-31,5,1318.776,68.09629999999999,Direct,4.39,Sales_Outreach,15.51
+SK-19990,Sally Knutson,Consumer,East,2016-11-28,3,883.409,168.7933,Organic,19.73,Blog_Traffic,8.56
+SL-20155,Sara Luxemburg,Home Office,South,2014-09-21,7,3053.012,527.9715,Social Media,22.87,Facebook_Prospecting,23.09
+SM-20005,Sally Matthias,Consumer,East,2014-11-23,4,244.49399999999997,-26.5927,Display,27.79,Retargeting_Display,-0.96
+SM-20320,Sean Miller,Home Office,South,2014-03-18,5,25043.05,-1980.7393,Paid Search,16.11,Brand_Awareness_PPC,-122.95
+SM-20905,Susan MacKendrick,Consumer,East,2016-05-03,1,1043.041,-237.2885,Social Media,27.66,Facebook_Prospecting,-8.58
+SM-20950,Suzanne McNair,Corporate,South,2014-09-29,12,5563.392,581.5741999999999,Paid Search,47.0,Brand_Awareness_PPC,12.37
+SN-20560,Skye Norling,Home Office,West,2015-06-18,6,1860.418,-716.8565000000001,Social Media,19.24,Facebook_Prospecting,-37.26
+SN-20710,Steve Nguyen,Home Office,Central,2014-05-06,7,3127.9592,481.74989999999997,Organic,7.33,SEO_Content,65.72
+SO-20335,Sean O'Donnell,Consumer,South,2015-10-11,6,2602.5755,-81.0858,Paid Search,11.11,Product_Category_PPC,-7.3
+SP-20545,Sibella Parks,Corporate,East,2014-10-13,6,1306.086,-118.77570000000001,Direct,3.15,Word_of_Mouth,-37.71
+SP-20620,Stefania Perrino,Corporate,East,2014-09-08,9,5440.319,-270.42819999999995,Direct,4.56,Word_of_Mouth,-59.3
+SP-20650,Stephanie Phelps,Corporate,West,2014-04-16,9,1872.4360000000001,268.4782,Email,3.75,Re_Engagement,71.59
+SP-20860,Sung Pak,Corporate,East,2014-12-15,10,4282.94,566.7226,Organic,11.13,SEO_Content,50.92
+SP-20920,Susan Pistek,Consumer,West,2014-11-22,6,3990.689,14.692400000000003,Paid Search,34.04,Product_Category_PPC,0.43
+SR-20425,Sharelle Roach,Home Office,West,2014-06-14,5,3233.481,-3333.9144,Organic,12.91,SEO_Content,-258.24
+SR-20740,Steven Roelle,Home Office,East,2014-02-20,8,4345.8859999999995,1990.4243999999999,Paid Search,15.15,Product_Category_PPC,131.38
+SS-20140,Saphhira Shifley,Corporate,East,2014-11-23,8,1324.028,332.3487,Email,3.33,Promotional_Blast,99.8
+SS-20410,Shahid Shariari,Consumer,West,2014-05-30,6,3056.8070000000002,-1010.9738,Paid Search,29.05,Product_Category_PPC,-34.8
+SS-20515,Shirley Schmidt,Home Office,South,2014-07-14,3,613.4,199.93449999999999,Social Media,28.37,LinkedIn_B2B,7.05
+SS-20590,Sonia Sunley,Consumer,West,2014-08-05,6,418.49,135.5401,Social Media,41.4,Facebook_Prospecting,3.27
+SS-20875,Sung Shariari,Consumer,Central,2014-12-14,5,964.636,-75.586,Social Media,11.82,LinkedIn_B2B,-6.39
+ST-20530,Shui Tom,Consumer,East,2014-02-14,7,433.34000000000003,84.4419,Display,41.77,Prospecting_Display,2.02
+SU-20665,Stephanie Ulpright,Home Office,South,2015-12-05,7,2595.364,763.4719,Organic,9.99,SEO_Content,76.42
+SV-20365,Seth Vernon,Consumer,East,2014-01-11,10,11470.949999999999,1199.4242,Paid Search,22.74,Brand_Awareness_PPC,52.75
+SV-20785,Stewart Visinsky,Consumer,West,2014-04-12,9,4105.305,485.0272,Organic,15.83,Referral_Program,30.64
+SV-20815,Stuart Van,Corporate,Central,2015-05-04,4,1271.0900000000001,199.6502,Direct,4.14,Sales_Outreach,48.22
+SV-20935,Susan Vittorini,Consumer,East,2016-03-19,8,1903.491,106.8912,Social Media,27.4,Facebook_Prospecting,3.9
+SW-20245,Scot Wooten,Consumer,West,2014-07-20,7,1085.078,-19.60620000000001,Paid Search,13.75,Brand_Awareness_PPC,-1.43
+SW-20275,Scott Williamson,Consumer,South,2014-03-10,6,1966.65,332.8725,Email,4.94,Welcome_Series,67.38
+SW-20350,Sean Wendt,Home Office,Central,2016-04-09,3,1019.044,95.8383,Social Media,22.45,Facebook_Prospecting,4.27
+SW-20455,Shaun Weien,Consumer,South,2015-06-22,7,2921.544,793.6548,Organic,10.85,SEO_Content,73.15
+SW-20755,Steven Ward,Corporate,East,2014-11-02,2,758.6959999999999,68.2416,Paid Search,57.58,Brand_Awareness_PPC,1.19
+SZ-20035,Sam Zeldin,Home Office,West,2014-09-07,11,3625.329,366.43030000000005,Organic,8.5,Blog_Traffic,43.11
+TA-21385,Tom Ashbrook,Home Office,East,2014-09-12,4,14595.62,4703.7883,Paid Search,1.0,Product_Category_PPC,4703.79
+TB-21055,Ted Butterfield,Consumer,East,2016-06-17,5,1467.881,390.2113,Paid Search,28.77,Competitor_Keywords,13.56
+TB-21175,Thomas Boland,Corporate,Central,2014-12-08,4,3589.296,829.1635,Email,7.52,Welcome_Series,110.26
+TB-21190,Thomas Brumley,Home Office,South,2014-12-27,4,816.1740000000001,179.0038,Social Media,22.49,Facebook_Prospecting,7.96
+TB-21250,Tim Brockman,Consumer,East,2014-12-08,7,1602.376,260.6155,Social Media,1.0,LinkedIn_B2B,260.62
+TB-21280,Toby Braunhardt,Consumer,East,2014-06-21,6,2198.45,490.9567,Paid Search,31.52,Competitor_Keywords,15.58
+TB-21355,Todd Boyes,Corporate,East,2016-01-25,5,834.328,268.967,Email,7.62,Re_Engagement,35.3
+TB-21400,Tom Boeckenhauer,Consumer,West,2014-01-21,7,9133.99,2798.3689,Email,2.15,Promotional_Blast,1301.57
+TB-21520,Tracy Blumstein,Consumer,East,2014-10-17,9,4737.486,-1603.0451,Paid Search,19.74,Brand_Awareness_PPC,-81.21
+TB-21595,Troy Blackwell,Consumer,Central,2014-02-18,5,1387.559,-136.4091,Direct,2.87,Word_of_Mouth,-47.53
+TB-21625,Trudy Brown,Consumer,Central,2014-08-06,9,2797.668,379.882,Paid Search,21.24,Product_Category_PPC,17.89
+TC-20980,Tamara Chand,Corporate,West,2014-11-07,5,19052.218,8981.323900000001,Paid Search,23.07,Brand_Awareness_PPC,389.31
+TC-21145,Theresa Coyne,Corporate,East,2017-09-15,1,1038.26,265.5332,Social Media,24.72,LinkedIn_B2B,10.74
+TC-21295,Toby Carlisle,Consumer,West,2014-10-14,8,4266.812,606.3727,Paid Search,20.46,Competitor_Keywords,29.64
+TC-21475,Tony Chapman,Home Office,South,2014-11-22,9,1244.976,119.104,Email,1.4,Promotional_Blast,85.07
+TC-21535,Tracy Collins,Home Office,South,2014-11-03,7,742.5580000000001,217.933,Organic,14.56,Blog_Traffic,14.97
+TD-20995,Tamara Dahlen,Consumer,East,2014-05-19,9,1434.5480000000002,88.1897,Social Media,12.6,Instagram_Retargeting,7.0
+TG-21310,Toby Gnade,Consumer,West,2015-03-09,5,3058.372,682.1704,Display,34.87,Retargeting_Display,19.56
+TG-21640,Trudy Glocke,Consumer,West,2014-03-31,4,2074.661,365.7205,Social Media,17.44,LinkedIn_B2B,20.97
+TH-21100,Thea Hendricks,Consumer,West,2014-09-27,5,2422.824,-135.2125,Social Media,11.46,Instagram_Retargeting,-11.8
+TH-21115,Thea Hudgings,Corporate,East,2014-09-23,4,2942.772,-252.5539,Direct,4.76,Word_of_Mouth,-53.06
+TH-21235,Tiffany House,Corporate,Central,2014-11-04,8,1022.201,92.729,Paid Search,37.15,Product_Category_PPC,2.5
+TH-21550,Tracy Hopkins,Home Office,East,2014-04-05,7,4234.0960000000005,-571.9678,Social Media,18.48,LinkedIn_B2B,-30.95
+TM-21010,Tamara Manning,Consumer,West,2014-02-21,8,2955.2259999999997,573.3013,Paid Search,27.82,Brand_Awareness_PPC,20.61
+TM-21490,Tony Molinari,Consumer,Central,2017-03-30,3,1094.6779999999999,292.52099999999996,Organic,10.54,SEO_Content,27.75
+TN-21040,Tanja Norvell,Home Office,West,2014-10-10,7,3130.221,-692.0452,Paid Search,14.58,Competitor_Keywords,-47.47
+TP-21130,Theone Pippenger,Consumer,East,2015-04-14,9,4454.0560000000005,1129.1261,Paid Search,16.07,Product_Category_PPC,70.26
+TP-21415,Tom Prescott,Consumer,West,2015-11-28,5,5329.0048,-1087.3898,Social Media,21.72,LinkedIn_B2B,-50.06
+TP-21565,Tracy Poddar,Corporate,West,2015-03-01,4,1936.6399999999999,139.22869999999995,Email,2.42,Welcome_Series,57.53
+TR-21325,Toby Ritter,Consumer,East,2014-12-01,5,675.9419999999999,220.36440000000002,Social Media,21.64,LinkedIn_B2B,10.18
+TS-21085,Thais Sissman,Consumer,West,2015-07-19,2,4.833,-3.3156,Organic,1.0,Blog_Traffic,-3.32
+TS-21160,Theresa Swint,Corporate,East,2014-04-23,6,2163.6240000000003,260.87440000000004,Email,4.67,Re_Engagement,55.86
+TS-21205,Thomas Seio,Corporate,East,2014-03-21,7,5371.09,862.8877,Email,6.85,Welcome_Series,125.97
+TS-21340,Toby Swindell,Consumer,Central,2014-01-19,5,974.7819999999999,-184.97889999999998,Display,41.11,Retargeting_Display,-4.5
+TS-21370,Todd Sumrall,Corporate,East,2014-10-28,6,11891.751,2371.7144000000003,Organic,15.71,Blog_Traffic,150.97
+TS-21430,Tom Stivers,Corporate,West,2014-07-30,5,2054.14,48.70169999999999,Email,2.64,Promotional_Blast,18.45
+TS-21505,Tony Sayre,Consumer,South,2014-12-20,6,2243.274,11.377899999999983,Paid Search,26.94,Product_Category_PPC,0.42
+TS-21610,Troy Staebel,Consumer,West,2014-08-16,7,2820.424,-294.6981,Email,8.76,Re_Engagement,-33.64
+TS-21655,Trudy Schmidt,Consumer,Central,2015-02-06,5,3368.094,220.91629999999998,Email,6.83,Welcome_Series,32.34
+TT-21070,Ted Trevino,Consumer,West,2014-05-18,7,4915.602,751.9567,Email,8.4,Promotional_Blast,89.52
+TT-21220,Thomas Thornton,Consumer,Central,2014-09-23,8,1427.0439999999999,278.7371,Paid Search,13.7,Competitor_Keywords,20.35
+TT-21265,Tim Taslimi,Corporate,West,2015-08-15,3,439.5,93.9162,Organic,10.31,Blog_Traffic,9.11
+TT-21460,Tonja Turnell,Home Office,Central,2015-12-08,7,5364.808,1124.4999,Email,5.31,Re_Engagement,211.77
+TW-21025,Tamara Willingham,Home Office,West,2014-12-22,7,5278.826,737.3905,Paid Search,29.08,Competitor_Keywords,25.36
+TZ-21580,Tracy Zic,Consumer,West,2014-11-11,4,1707.286,224.8887,Organic,5.99,SEO_Content,37.54
+VB-21745,Victoria Brennan,Corporate,South,2015-07-17,6,2005.596,371.2398,Paid Search,43.59,Brand_Awareness_PPC,8.52
+VD-21670,Valerie Dominguez,Consumer,South,2014-08-04,6,6442.254,1617.7874000000002,Social Media,28.12,LinkedIn_B2B,57.53
+VF-21715,Vicky Freymann,Home Office,Central,2014-03-01,5,847.944,-96.27799999999999,Paid Search,41.89,Product_Category_PPC,-2.3
+VG-21790,Vivek Gonzalez,Consumer,West,2014-08-08,6,846.01,143.6268,Paid Search,31.39,Competitor_Keywords,4.58
+VG-21805,Vivek Grady,Corporate,South,2014-09-22,5,427.372,-52.333,Organic,6.46,Referral_Program,-8.1
+VM-21685,Valerie Mitchum,Home Office,East,2014-04-07,7,2454.866,513.5269,Social Media,27.46,Facebook_Prospecting,18.7
+VM-21835,Vivian Mathis,Consumer,East,2014-03-22,5,380.69,116.6373,Social Media,33.8,Instagram_Retargeting,3.45
+VP-21730,Victor Preis,Home Office,West,2015-07-05,3,993.9019999999999,205.3888,Paid Search,31.37,Brand_Awareness_PPC,6.55
+VP-21760,Victoria Pisteka,Corporate,West,2014-09-06,7,3360.526,-1018.7768,Organic,5.37,Blog_Traffic,-189.72
+VS-21820,Vivek Sundaresam,Consumer,West,2014-01-07,4,1055.981,-262.8093,Email,4.25,Re_Engagement,-61.84
+VT-21700,Valerie Takahito,Home Office,East,2014-06-06,2,1736.596,-224.08889999999997,Direct,3.08,Sales_Outreach,-72.76
+VW-21775,Victoria Wilson,Corporate,East,2014-05-11,10,6134.0380000000005,-874.6645,Display,59.83,Prospecting_Display,-14.62
+WB-21850,William Brown,Consumer,East,2014-11-04,11,6160.102,714.3311,Organic,19.0,Blog_Traffic,37.6
+XP-21865,Xylona Preis,Consumer,West,2014-01-20,11,2374.658,621.23,Organic,5.73,SEO_Content,108.42
+YC-21895,Yoseph Carroll,Corporate,West,2014-11-17,5,5454.35,1305.629,Social Media,25.23,Facebook_Prospecting,51.75
+YS-21880,Yana Sorensen,Corporate,South,2015-01-12,8,6720.4439999999995,1778.2923,Direct,1.81,Sales_Outreach,982.48
+ZC-21910,Zuschuss Carroll,Consumer,West,2014-10-13,13,8025.707,-1032.1490000000001,Social Media,10.47,LinkedIn_B2B,-98.58
+ZD-21925,Zuschuss Donatelli,Consumer,West,2014-08-27,5,1493.944,249.1307,Social Media,27.21,LinkedIn_B2B,9.16
